@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Syntra - Systems for Enterprise</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* Header */
+    header {
+      background: #0d47a1;
+      color: white;
+      padding: 1.5rem 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 40px;
+      margin-right: 1rem;
+    }
+    .logo-text {
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .tagline {
+      font-size: 1rem;
+      font-weight: 300;
+      margin-top: 0.5rem;
+      color: #e0e0e0;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 4rem 0;
+    }
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+      padding-right: 2rem;
+    }
+    .hero-text h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: #0d47a1;
+    }
+    .hero-text p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #555;
+    }
+    .btn-primary {
+      background-color: #0d47a1;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-primary:hover {
+      background-color: #07408a;
+    }
+    .hero-image {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+    }
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    /* Features Section */
+    .features {
+      background: white;
+      padding: 4rem 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin-bottom: 4rem;
+    }
+    .features h3 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #0d47a1;
+    }
+    .feature-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 2rem;
+    }
+    .feature {
+      flex: 1 1 250px;
+      background: #e3f2fd;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .feature h4 {
+      margin-bottom: 1rem;
+      color: #0d47a1;
+    }
+    .feature p {
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    /* Contact Section */
+    #contact {
+      margin-bottom: 4rem;
+    }
+    #contact h3 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #0d47a1;
+    }
+    #contact .contact-box {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    #contact .contact-box p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+    #contact a {
+      color: #0d47a1;
+      text-decoration: none;
+    }
+    #contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      background: #0d47a1;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+      .hero-text {
+        padding-right: 0;
+        margin-bottom: 2rem;
+      }
+      .feature-list {
+        flex-direction: column;
+      }
+      .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <img src="logo-short-white.png" alt="Syntra Logo" />
+        <div>
+          <div class="logo-text">Syntra</div>
+          <div class="tagline">Systems for Enterprise</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero container">
+    <div class="hero-text">
+      <h2>Transform Your Business with Syntra</h2>
+      <p>Empower your enterprise with innovative, scalable, and secure system solutions designed to streamline operations and accelerate growth.</p>
+      <a href="#contact" class="btn-primary">Get Started</a>
+    </div>
+    <div class="hero-image">
+      <img src="syntra-dashboard.png" alt="Enterprise system feature image" />
+    </div>
+  </section>
+
+  <section class="features container">
+    <h3>Why Choose Syntra?</h3>
+    <div class="feature-list">
+      <div class="feature">
+        <h4>Scalable Architecture</h4>
+        <p>Our systems grow with your business, supporting expanding teams and data without compromise.</p>
+      </div>
+      <div class="feature">
+        <h4>Robust Security</h4>
+        <p>Built with enterprise-grade security protocols to keep your data safe and compliant.</p>
+      </div>
+      <div class="feature">
+        <h4>Customizable Solutions</h4>
+        <p>Tailor Syntra to your unique workflows and business needs with flexible modules.</p>
+      </div>
+      <div class="feature">
+        <h4>Dedicated Support</h4>
+        <p>Our expert team is here to help you 24/7, ensuring smooth deployment and ongoing success.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h3>Contact Us</h3>
+    <div class="contact-box">
+      <p>Have questions or ready to get started?</p>
+      <p><strong>Email:</strong> <a href="mailto:kevinalnizar@gmail.com">kevinalnizar@gmail.com</a></p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/6281541277051" target="_blank">+62 815-4127-7051</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Syntra Systems. All rights reserved.</p>
+  </footer>
+</body>
+</html>
