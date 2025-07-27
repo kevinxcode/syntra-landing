@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Beranda -->
+  <url>
+    <loc>https://syntra-enterprise.com/</loc>
+    <lastmod>2025-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Layanan -->
+  <url>
+    <loc>https://syntra-enterprise.com/layanan</loc>
+    <lastmod>2025-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Produk -->
+  <url>
+    <loc>https://syntra-enterprise.com/produk</loc>
+    <lastmod>2025-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://syntra-enterprise.com/blog</loc>
+    <lastmod>2025-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Kontak -->
+  <url>
+    <loc>https://syntra-enterprise.com/kontak</loc>
+    <lastmod>2025-07-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
