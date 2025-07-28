@@ -68,36 +68,37 @@
 
 
 <body>
-  
+
   <header>
-  <div class="container header-content">
-    <div class="logo-nav-wrapper">
-      <a href="/" class="logo">
-        <img src="assets/syntra-logo-white.png" alt="Logo Syntra Enterprise Teknologi" />
-      </a>
-     
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+    <div class="container header-content">
+      <div class="logo-nav-wrapper">
+        <a href="/" class="logo">
+          <img src="assets/syntra-logo-white.png" alt="Logo Syntra Enterprise Teknologi" />
+        </a>
+
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav class="navbar" id="navbar">
+          <ul class="nav-menu">
+            <li><a href="/">Beranda</a></li>
+            <li><a href="#fitur">Fitur</a></li>
+            <li><a href="#produk">Produk</a></li>
+            <li><a href="#contact">Kontak</a></li>
+            <!-- show on mobile only -->
+            <li class="mobile-login"><a href="https://app.syntra-enterprise.com/" target="_blank"
+                class="btn-default mobile-login-btn">Login</a></li>
+          </ul>
+        </nav>
+
+        <!-- show on desktop only -->
+        <a href="https://app.syntra-enterprise.com/" target="_blank" class="btn-default desktop-login">Login</a>
       </div>
-     
-      <nav class="navbar" id="navbar">
-        <ul class="nav-menu">
-          <li><a href="/">Beranda</a></li>
-          <li><a href="#fitur">Fitur</a></li>
-          <li><a href="#produk">Produk</a></li>
-          <li><a href="#contact">Kontak</a></li>
-          <!-- show on mobile only -->
-          <li class="mobile-login"><a href="https://app.syntra-enterprise.com/" target="_blank" class="btn-default mobile-login-btn">Login</a></li>
-        </ul>
-      </nav>
-      
-      <!-- show on desktop only -->
-      <a href="https://app.syntra-enterprise.com/" target="_blank" class="btn-default desktop-login">Login</a>
     </div>
-  </div>
-</header>
+  </header>
 
 
   <main>
@@ -107,8 +108,8 @@
         <p>Syntra Enterprise adalah solusi lengkap untuk pengelolaan bisnis modern —
           mulai dari operasional harian, pencatatan keuangan, hingga pelaporan. Dirancang khusus untuk UMKM dan
           enterprise yang butuh sistem scalable dan aman.</p>
-        <a href="#contact" class="btn-primary">Tanya Dulu Aja</a>
-        <a href="#contact" class="btn-primary">Konsultasi Gratis</a>
+        <a href="#" onclick="sendWhatsApp()" class="btn-primary">Tanya Aja Dulu</a>
+        <a href="#" onclick="sendWhatsApp()" class="btn-primary">Konsultasi Gratis</a>
       </div>
       <div class="hero-image">
         <img src="assets/syntra-enterprise.png" alt="Tampilan Dashboard Aplikasi Syntra Enterprise" />
@@ -212,7 +213,7 @@
               <li>📈Laporan Instan</li>
             </ul>
             <hr />
-            <a href="#" class="learn-more">Pelajari Lebih Lanjut →</a>
+            <a href="#" class="learn-more" onclick="sendWhatsApp()">Pelajari Lebih Lanjut →</a>
           </div>
 
           <!-- GAMBAR di kanan -->
@@ -238,7 +239,7 @@
             <li>Coba gratis 30 hari</li>
             <li>Sudah termasuk PPN 11%</li>
           </ul>
-          <button class="cta">Coba Gratis</button>
+          <button class="cta" onclick="sendWhatsApp()">Coba Gratis</button>
         </div>
 
         <div class="pricing-card highlight">
@@ -253,21 +254,23 @@
             <li>Coba gratis 30 hari</li>
             <li>Sudah termasuk PPN 11%</li>
           </ul>
-          <button class="cta">Coba Gratis</button>
+          <button class="cta" onclick="sendWhatsApp()">Coba Gratis</button>
         </div>
 
         <div class="pricing-card">
-          <h3>Paket Dasar 1 Tahun</h3>
-          <p><strong>Rp 2.820.000</strong> / tahun</p><br><br><br>
+          <h3>Paket Kustom Aplikasi</h3>
+          <p><strong>Hubungi Kami</strong> untuk estimasi harga</p><br>
+          <p><strong>Harga Mulai Dari</strong> Rp 700.000</p><br>
           <ul>
-            <li>1 Data Perusahaan</li>
-            <li>Unlimited akses pengguna</li>
-            <li>Role Access Karyawan</li>
-            <li>Coba gratis 30 hari</li>
-            <li>Sudah termasuk PPN 11%</li>
+            <li>Solusi sesuai kebutuhan bisnis Anda</li>
+            <li>Integrasi sistem internal</li>
+            <li>Desain dan fitur kustom</li>
+            <li>Dukungan teknis dan pelatihan</li>
+            <li>Estimasi harga & waktu pengerjaan transparan</li>
           </ul>
-          <button class="cta">Coba Gratis</button>
+          <button class="cta" onclick="sendWhatsApp()">Diskusikan Sekarang</button>
         </div>
+
       </div>
     </section>
 
@@ -283,8 +286,8 @@
             <li>✔️ Tanpa Biaya Tambahan untuk Kustom Aplikasi</li>
             <li>✔️ Dukungan end-to-end: dari ide sampai implementasi</li>
           </ul>
-          <a href="#contact" class="btn-konsultasi">Coba Gratis 30 Hari</a>
-          <a href="#contact" class="btn-konsultasi">Gratis Konsultasi</a>
+          <a href="#" onclick="sendWhatsApp()" class="btn-konsultasi">Coba Gratis 30 Hari</a>
+          <a href="#" onclick="sendWhatsApp()" class="btn-konsultasi">Gratis Konsultasi</a>
         </div>
         <div class="konsultasi-image">
           <img src="assets/c.png" alt="Konsultasi Bisnis">
@@ -292,110 +295,130 @@
       </div>
     </section>
 
-    <section class="produk-section">
-        <div class="floating-element floating-1"></div>
-        <div class="floating-element floating-2"></div>
-        
-        <div class="container produk-container">
-            <div class="section-header">
-                <h2 class="section-title">Produk Unggulan Kami</h2>
-                <p class="section-subtitle">
-                    Solusi aplikasi inovatif yang dirancang khusus untuk mengoptimalkan operasional bisnis Anda dengan teknologi terdepan
-                </p>
-            </div>
+    <section class="unggulan-section">
+      <div class="unggulan-floating floating-1"></div>
+      <div class="unggulan-floating floating-2"></div>
 
-            <div class="stats-section">
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <span class="stat-number">50+</span>
-                        <span class="stat-label">Klien Puas</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">99%</span>
-                        <span class="stat-label">Uptime</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">24/7</span>
-                        <span class="stat-label">Support</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">3+</span>
-                        <span class="stat-label">Tahun Pengalaman</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="produk-grid">
-                <div class="produk-card">
-                    <div class="card-image-container">
-                        <img src="assets/product/syntra-app.png" alt="Sistem Order dan Keuangan Advertising">
-                        <div class="card-overlay">
-                            <span class="card-badge">Business Suite</span>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Sistem Order dan Keuangan Advertising</h3>
-                        <p class="card-description">
-                            Platform terintegrasi untuk mengelola seluruh aspek bisnis advertising dari order hingga keuangan dengan dashboard yang powerful dan real-time monitoring.
-                        </p>
-                        <ul class="feature-list">
-                            <li>
-                                <div class="feature-icon"></div>
-                                <span class="feature-text">Dashboard kolaboratif multi-user</span>
-                            </li>
-                            <li>
-                                <div class="feature-icon"></div>
-                                <span class="feature-text">Sistem transaksi dinamis</span>
-                            </li>
-                            <li>
-                                <div class="feature-icon"></div>
-                                <span class="feature-text">Tagihan & pelaporan real-time</span>
-                            </li>
-                            <li>
-                                <div class="feature-icon"></div>
-                                <span class="feature-text">Analitik bisnis mendalam</span>
-                            </li>
-                        </ul>
-                        
-                    </div>
-                </div>
-
-                <div class="produk-card">
-                    <div class="card-image-container">
-                        <img src="assets/product/londry.png" alt="Sistem Laundry Kasir">
-                        <div class="card-overlay">
-                            <span class="card-badge">Smart Solution</span>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Sistem Laundry Kasir</h3>
-                        <p class="card-description">
-                            Solusi komprehensif untuk mengoptimalkan operasional bisnis laundry dari penerimaan order hingga pengantaran dengan sistem tracking yang canggih.
-                        </p>
-                        <ul class="feature-list">
-                            <li>
-                                <div class="feature-icon"></div>
-                                <span class="feature-text">Input & tracking order super cepat</span>
-                            </li>
-                            <li>
-                                <div class="feature-icon"></div>
-                                <span class="feature-text">Sistem rute pengiriman optimal</span>
-                            </li>
-                            <li>
-                                <div class="feature-icon"></div>
-                                <span class="feature-text">Laporan harian & keuangan otomatis</span>
-                            </li>
-                            <li>
-                                <div class="feature-icon"></div>
-                                <span class="feature-text">Notifikasi customer real-time</span>
-                            </li>
-                        </ul>
-                       
-                    </div>
-                </div>
-            </div>
+      <div class="container unggulan-container">
+        <div class="unggulan-header">
+          <h2 class="unggulan-title">Produk Unggulan Kami</h2>
+          <p class="unggulan-subtitle">
+            Solusi aplikasi inovatif yang dirancang khusus untuk mengoptimalkan operasional bisnis Anda dengan teknologi
+            terdepan
+          </p>
         </div>
+
+        <div class="unggulan-stats">
+          <div class="unggulan-stats-grid">
+            <div class="unggulan-stat-item">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">Klien Puas</span>
+            </div>
+            <div class="unggulan-stat-item">
+              <span class="stat-number">99%</span>
+              <span class="stat-label">Uptime</span>
+            </div>
+            <div class="unggulan-stat-item">
+              <span class="stat-number">24/7</span>
+              <span class="stat-label">Support</span>
+            </div>
+            <div class="unggulan-stat-item">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Tahun Pengalaman</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="unggulan-grid">
+          <div class="unggulan-box">
+            <div class="unggulan-image-wrapper">
+              <img src="assets/product/syntra-app.png" alt="Sistem Order dan Keuangan Advertising" />
+              <div class="unggulan-overlay">
+                <span class="unggulan-badge">Business Suite</span>
+              </div>
+            </div>
+            <div class="unggulan-content">
+              <h3 class="unggulan-box-title">Sistem Order dan Keuangan Advertising</h3>
+              <p class="unggulan-box-desc">
+                Platform terintegrasi untuk mengelola seluruh aspek bisnis advertising dari order hingga keuangan dengan
+                dashboard yang powerful dan real-time monitoring.
+              </p>
+              <ul class="unggulan-feature-list">
+                <li>
+                  <div class="unggulan-feature-icon"></div><span class="unggulan-feature-text">Dashboard kolaboratif
+                    multi-user</span>
+                </li>
+                <li>
+                  <div class="unggulan-feature-icon"></div><span class="unggulan-feature-text">Sistem transaksi
+                    dinamis</span>
+                </li>
+                <li>
+                  <div class="unggulan-feature-icon"></div><span class="unggulan-feature-text">Tagihan & pelaporan
+                    real-time</span>
+                </li>
+                <li>
+                  <div class="unggulan-feature-icon"></div><span class="unggulan-feature-text">Analitik bisnis
+                    mendalam</span>
+                </li>
+              </ul>
+              <div class="card-actions">
+                <a href="https://app.syntra-enterprise.com/" target="_blank" class="btn-primary">
+                  <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                      d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                  </svg>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="unggulan-box">
+            <div class="unggulan-image-wrapper">
+              <img src="assets/product/londry.png" alt="Sistem Laundry Kasir" />
+              <div class="unggulan-overlay">
+                <span class="unggulan-badge">Smart Solution</span>
+              </div>
+            </div>
+            <div class="unggulan-content">
+              <h3 class="unggulan-box-title">Sistem Laundry Kasir</h3>
+              <p class="unggulan-box-desc">
+                Solusi komprehensif untuk mengoptimalkan operasional bisnis laundry dari penerimaan order hingga
+                pengantaran dengan sistem tracking yang canggih.
+              </p>
+              <ul class="unggulan-feature-list">
+                <li>
+                  <div class="unggulan-feature-icon"></div><span class="unggulan-feature-text">Input & tracking order
+                    super cepat</span>
+                </li>
+                <li>
+                  <div class="unggulan-feature-icon"></div><span class="unggulan-feature-text">Sistem rute pengiriman
+                    optimal</span>
+                </li>
+                <li>
+                  <div class="unggulan-feature-icon"></div><span class="unggulan-feature-text">Laporan harian & keuangan
+                    otomatis</span>
+                </li>
+                <li>
+                  <div class="unggulan-feature-icon"></div><span class="unggulan-feature-text">Notifikasi customer
+                    real-time</span>
+                </li>
+              </ul>
+              <div class="card-actions">
+                <a href="https://washingwhiz.com/" target="_blank" class="btn-primary">
+                  <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path
+                      d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                  </svg>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+
 
     <section class="clients-section">
       <div class="clients-container">
@@ -405,7 +428,7 @@
         <div class="clients-logos">
           <img src="assets//client/kvi_advertising.jpg" alt="King Visual Indonesia">
           <img src="assets//client/mpi.jpg" alt="Media Printer Indonesia">
-         
+
         </div>
       </div>
     </section>
@@ -414,90 +437,91 @@
 
 
     <section class="contact-section">
-        <div class="container">
-            <div class="contact-content">
-                <h2 class="contact-title floating">Hubungi Kami</h2>
-                <p class="contact-subtitle">
-                    Siap untuk memulai transformasi digital bersama Syntra? Tim ahli kami siap membantu mewujudkan visi teknologi perusahaan Anda.
-                </p>
+      <div class="container">
+        <div class="contact-content">
+          <h2 class="contact-title floating">Hubungi Kami</h2>
+          <p class="contact-subtitle">
+            Siap untuk memulai transformasi digital bersama Syntra? Tim ahli kami siap membantu mewujudkan visi
+            teknologi perusahaan Anda.
+          </p>
 
-                <div class="contact-grid">
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                                      d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                            </svg>
-                        </div>
-                        <div class="contact-method">Email</div>
-                        <div class="contact-info">
-                            <a href="mailto:kevinalnizar@gmail.com">kevinalnizar@gmail.com</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                                      d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
-                            </svg>
-                        </div>
-                        <div class="contact-method">WhatsApp</div>
-                        <div class="contact-info">
-                            <a href="https://wa.me/6281541277051" target="_blank">+62 815-4127-7051</a>
-                        </div>
-                    </div>
-
-                    <div class="contact-card">
-                        <div class="contact-icon">
-                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                            </svg>
-                        </div>
-                        <div class="contact-method">Lokasi</div>
-                        <div class="contact-info">
-                            Jakarta, Indonesia<br>
-                            <small style="opacity: 0.8;">Konsultasi Online & On-site</small>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="cta-section">
-                    <div class="cta-content">
-                        <h3 class="cta-title">Mulai Transformasi Digital Anda</h3>
-                        <p class="cta-text">
-                            Dapatkan konsultasi gratis dan solusi teknologi terbaik untuk bisnis Anda
-                        </p>
-                        <div class="cta-buttons">
-                            <a href="https://wa.me/6281541277051?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Syntra" target="_blank" class="cta-btn">
-                                <svg fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
-                                </svg>
-                                Chat WhatsApp
-                            </a>
-                            <a href="mailto:kevinalnizar@gmail.com?subject=Konsultasi%20Layanan%20Syntra" class="cta-btn">
-                                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                                          d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                                </svg>
-                                Kirim Email
-                            </a>
-                        </div>
-                    </div>
-                </div>
+          <div class="contact-grid">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div class="contact-method">Email</div>
+              <div class="contact-info">
+                <a href="mailto:kevinalnizar@gmail.com">kevinalnizar@gmail.com</a>
+              </div>
             </div>
+
+            <div class="contact-card">
+              <div class="contact-icon" onclick="sendWhatsApp()">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                </svg>
+              </div>
+              <div class="contact-method">WhatsApp</div>
+              <div class="contact-info">
+                <a href="#" onclick="sendWhatsApp()">+62 815-4127-7051</a>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <div class="contact-method">Lokasi</div>
+              <div class="contact-info">
+                Jakarta, Indonesia<br>
+                <small style="opacity: 0.8;">Konsultasi Online & On-site</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="cta-section">
+            <div class="cta-content">
+              <h3 class="cta-title">Mulai Transformasi Digital Anda</h3>
+              <p class="cta-text">
+                Dapatkan konsultasi gratis dan solusi teknologi terbaik untuk bisnis Anda
+              </p>
+              <div class="cta-buttons">
+                <a href="#" onclick="sendWhatsApp()" class="cta-btn">
+                  <svg fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
+                  </svg>
+                  Chat WhatsApp
+                </a>
+                <a href="mailto:kevinalnizar@gmail.com?subject=Konsultasi%20Layanan%20Syntra" class="cta-btn">
+                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  Kirim Email
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
 
   </main>
 
   <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/6281541277051?text=Halo%20saya%20tertarik%20dengan%20Aplikasi%20Custome" class="wa-float"
-    target="_blank">
+  <a href="#" onclick="sendWhatsApp()" class="wa-float" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="wa-icon" />
     <span>WhatsApp Kami</span>
   </a>
@@ -533,43 +557,52 @@
   </style>
 
   <script>
-// Hamburger Menu Toggle
-const hamburger = document.getElementById('hamburger');
-const navbar = document.getElementById('navbar');
+    function sendWhatsApp() {
+      const phoneNumber = '6281541277051'; // Ganti dengan nomor tujuan (tanpa tanda +)
+      const message = encodeURIComponent('Halo, saya tertarik dengan layanan kustom aplikasi di Syntra Teknologi .');
+      const url = `https://wa.me/${phoneNumber}?text=${message}`;
+      window.open(url, '_blank');
+    }
+  </script>
 
-hamburger.addEventListener('click', function() {
-  hamburger.classList.toggle('active');
-  navbar.classList.toggle('active');
-});
+  <script>
+    // Hamburger Menu Toggle
+    const hamburger = document.getElementById('hamburger');
+    const navbar = document.getElementById('navbar');
 
-// Close menu when clicking on a nav link (mobile)
-const navLinks = document.querySelectorAll('.nav-menu li a');
-navLinks.forEach(link => {
-  link.addEventListener('click', function() {
-    hamburger.classList.remove('active');
-    navbar.classList.remove('active');
-  });
-});
+    hamburger.addEventListener('click', function () {
+      hamburger.classList.toggle('active');
+      navbar.classList.toggle('active');
+    });
 
-// Close menu when clicking outside (mobile)
-document.addEventListener('click', function(event) {
-  const isClickInsideNav = navbar.contains(event.target);
-  const isClickOnHamburger = hamburger.contains(event.target);
-  
-  if (!isClickInsideNav && !isClickOnHamburger && navbar.classList.contains('active')) {
-    hamburger.classList.remove('active');
-    navbar.classList.remove('active');
-  }
-});
+    // Close menu when clicking on a nav link (mobile)
+    const navLinks = document.querySelectorAll('.nav-menu li a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function () {
+        hamburger.classList.remove('active');
+        navbar.classList.remove('active');
+      });
+    });
 
-// Handle window resize
-window.addEventListener('resize', function() {
-  if (window.innerWidth > 768) {
-    hamburger.classList.remove('active');
-    navbar.classList.remove('active');
-  }
-});
-</script>
+    // Close menu when clicking outside (mobile)
+    document.addEventListener('click', function (event) {
+      const isClickInsideNav = navbar.contains(event.target);
+      const isClickOnHamburger = hamburger.contains(event.target);
+
+      if (!isClickInsideNav && !isClickOnHamburger && navbar.classList.contains('active')) {
+        hamburger.classList.remove('active');
+        navbar.classList.remove('active');
+      }
+    });
+
+    // Handle window resize
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 768) {
+        hamburger.classList.remove('active');
+        navbar.classList.remove('active');
+      }
+    });
+  </script>
 
 
   <footer>
