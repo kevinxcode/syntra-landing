@@ -1,8 +1,7 @@
-/* ========== HEADER & NAVIGATION ========== */
 header {
   background: #0d47a1;
   color: white;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   position: relative;
 }
@@ -31,28 +30,17 @@ header {
   margin-right: 1rem;
 }
 
-.logo-text {
-  font-size: 1.8rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  white-space: nowrap;
-}
-
-.tagline {
-  font-size: 1rem;
-  font-weight: 300;
-  margin-top: 0.5rem;
-  color: #e0e0e0;
-}
-
+/* Navigation */
 .navbar {
   margin-left: auto;
+  margin-right: 1rem;
 }
 
 .nav-menu {
   list-style: none;
   display: flex;
   gap: 2rem;
+  align-items: center;
 }
 
 .nav-menu li a {
@@ -65,6 +53,50 @@ header {
 
 .nav-menu li a:hover {
   color: #bbdefb;
+}
+
+/* Login Button Styles */
+.btn-default {
+  display: inline-block;
+  background: white;
+  color: #0d47a1;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid white;
+}
+
+.btn-default:hover {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+/* Mobile login button in nav menu */
+.mobile-login {
+  display: none;
+}
+
+.mobile-login-btn {
+  background: white !important;
+  color: #0d47a1 !important;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  border: 2px solid white;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.mobile-login-btn:hover {
+  background: transparent !important;
+  color: white !important;
+}
+
+/* Desktop login button */
+.desktop-login {
+  /* Default styles already applied above */
 }
 
 /* Hamburger Menu */
@@ -109,6 +141,16 @@ header {
     display: flex;
   }
 
+  /* Hide desktop login button */
+  .desktop-login {
+    display: none;
+  }
+
+  /* Show mobile login in nav menu */
+  .mobile-login {
+    display: block;
+  }
+
   .navbar {
     position: absolute;
     top: 100%;
@@ -121,6 +163,7 @@ header {
     visibility: hidden;
     transition: all 0.3s ease;
     z-index: 1000;
+    margin: 0;
   }
 
   .navbar.active {
@@ -133,10 +176,12 @@ header {
     flex-direction: column;
     gap: 0;
     padding: 1rem 0;
+    align-items: stretch;
   }
 
   .nav-menu li {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
   }
 
   .nav-menu li:last-child {
@@ -147,15 +192,12 @@ header {
     display: block;
     padding: 1rem 2rem;
     transition: all 0.3s ease;
+    text-align: left;
   }
 
   .nav-menu li a:hover {
     background-color: rgba(255, 255, 255, 0.1);
     color: #bbdefb;
-  }
-
-  .logo-text {
-    font-size: 1.4rem;
   }
 
   .logo img {
@@ -168,10 +210,6 @@ header {
     padding: 1rem 0;
   }
 
-  .logo-text {
-    font-size: 1.2rem;
-  }
-
   .logo img {
     height: 30px;
     margin-right: 0.5rem;
@@ -180,5 +218,10 @@ header {
   .nav-menu li a {
     padding: 0.8rem 1.5rem;
     font-size: 0.9rem;
+  }
+
+  .mobile-login-btn {
+    margin: 1rem 1.5rem;
+    text-align: center;
   }
 }

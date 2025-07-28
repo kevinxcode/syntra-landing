@@ -70,33 +70,36 @@
   <header>
   <div class="container header-content">
     <div class="logo-nav-wrapper">
-      <div class="logo">
+      <a href="/" class="logo">
         <img src="assets/syntra-logo-white.png" alt="Logo Syntra Enterprise Teknologi" />
-      </div>
-      
+      </a>
+     
       <div class="hamburger" id="hamburger">
         <span></span>
         <span></span>
         <span></span>
       </div>
-      
+     
       <nav class="navbar" id="navbar">
         <ul class="nav-menu">
-          <li><a href="#hero">Beranda</a></li>
+          <li><a href="/">Beranda</a></li>
           <li><a href="#fitur">Fitur</a></li>
           <li><a href="#produk">Produk</a></li>
           <li><a href="#contact">Kontak</a></li>
-          <li><a href="https://app.syntra-enterprise.com/" target="_blank" class="btn-default" style="color: black;">Login</a></li>
+          <!-- show on mobile only -->
+          <li class="mobile-login"><a href="https://app.syntra-enterprise.com/" target="_blank" class="btn-default mobile-login-btn">Login</a></li>
         </ul>
       </nav>
-       <a href="https://app.syntra-enterprise.com/" target="_blank" class="btn-default">Login</a> 
+      
+      <!-- show on desktop only -->
+      <a href="https://app.syntra-enterprise.com/" target="_blank" class="btn-default desktop-login">Login</a>
     </div>
   </div>
 </header>
 
 
   <main>
-    <section class="hero container">
+    <section class="hero container" style="margin-top: 2rem;">
       <div class="hero-text">
         <h1>Solusi Digital & Aplikasi Kustom untuk Bisnis Anda</h1>
         <p>Syntra Enterprise adalah solusi lengkap untuk pengelolaan bisnis modern —
