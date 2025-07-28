@@ -602,16 +602,7 @@ footer {
     justify-content: center;
   }
 
-  .header-content,
-  .logo-nav-wrapper {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-menu {
-    gap: 0.5rem;
-    padding-top: 1rem;
-  }
+ 
 }
 
 /* value */
