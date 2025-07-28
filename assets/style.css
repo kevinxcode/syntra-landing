@@ -1,0 +1,726 @@
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    background: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  header {
+    background: #0d47a1;
+    color: white;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 40px;
+    margin-right: 1rem;
+  }
+
+  .logo-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .tagline {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 0.5rem;
+    color: #e0e0e0;
+  }
+
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 4rem 0;
+  }
+
+  .hero-text {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #0d47a1;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+
+  .btn-primary {
+    background-color: #0d47a1;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .btn-primary:hover {
+    background-color: #07408a;
+  }
+
+  .hero-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .features {
+    background: white;
+    padding: 4rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 4rem;
+  }
+
+  .features h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #0d47a1;
+  }
+
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+
+  .feature {
+    flex: 1 1 250px;
+    background: #e3f2fd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .feature h3 {
+    margin-bottom: 1rem;
+    color: #0d47a1;
+  }
+
+  .pricing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 4rem 0;
+  }
+
+  .pricing-card {
+    flex: 1 1 300px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+  }
+
+  .pricing-card.highlight {
+    border: 2px solid #0d47a1;
+    background-color: #e3f2fd;
+  }
+
+  .pricing-card h3 {
+    color: #0d47a1;
+    margin-bottom: 0.5rem;
+  }
+
+  .pricing-card p {
+    margin-bottom: 1rem;
+  }
+
+  .pricing-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  .pricing-card ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+  }
+
+  .pricing-card ul li::before {
+    content: '✓';
+    color: green;
+    position: absolute;
+    left: 0;
+  }
+
+  .cta {
+    background-color: #0d47a1;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .cta:hover {
+    background-color: #06397b;
+  }
+
+  #contact {
+    margin-bottom: 4rem;
+  }
+
+  #contact h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #0d47a1;
+  }
+
+  #contact .contact-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+  }
+
+  #contact .contact-box p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  #contact a {
+    color: #0d47a1;
+    text-decoration: none;
+  }
+
+  #contact a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: #0d47a1;
+    color: white;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+    }
+
+    .hero-text {
+      padding-right: 0;
+      margin-bottom: 2rem;
+    }
+
+    .feature-list,
+    .pricing {
+      flex-direction: column;
+    }
+
+    .header-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .fitur-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .fitur-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .fitur-image {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .fitur-image img {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .fitur-content {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .fitur-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+
+  .fitur-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .fitur-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .fitur-icon {
+    font-size: 24px;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fitur-item h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .fitur-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+  }
+
+  .konsultasi-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .konsultasi-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .konsultasi-text {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .konsultasi-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  .konsultasi-text p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 20px;
+  }
+
+  .konsultasi-text ul {
+    padding-left: 20px;
+    margin-bottom: 24px;
+  }
+
+  .konsultasi-text li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #333;
+  }
+
+  .btn-konsultasi {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0e74ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+
+  .btn-konsultasi:hover {
+    background-color: #0b5ed7;
+  }
+
+  .konsultasi-image {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .konsultasi-image img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+
+  .produk-section {
+    background-color: #ffffff;
+    padding: 80px 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .produk-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .produk-container h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .produk-container p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .produk-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .produk-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 480px;
+    background-color: #f4f7fa;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .produk-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+
+  .produk-card h3 {
+    font-size: 24px;
+    color: #0e74ff;
+    margin-bottom: 10px;
+  }
+
+  .produk-card p {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 16px;
+  }
+
+  .produk-card ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .produk-card li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #444;
+  }
+
+  .clients-section {
+    background-color: #f9fafb;
+    padding: 80px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .clients-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .clients-container h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .clients-container p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 40px;
+  }
+
+  .clients-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .clients-logos img {
+    height: 60px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+
+  .clients-logos img:hover {
+    filter: grayscale(0%);
+  }
+
+  .logo-nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
+
+  .navbar {
+    margin-left: auto;
+  }
+
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .nav-menu li a:hover {
+    color: #bbdefb;
+  }
+
+  @media (max-width: 768px) {
+    .logo-nav-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .nav-menu {
+      flex-direction: column;
+      gap: 0.5rem;
+      padding-top: 1rem;
+    }
+  }
+
+  .product-section {
+    padding: 4rem 1rem;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  .section-subtitle {
+    color: #e91e63;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-description {
+    color: #555;
+    margin-bottom: 2rem;
+  }
+
+  .product-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    text-align: left;
+  }
+
+  .product-image img {
+    max-width: 100%;
+    border-radius: 16px;
+  }
+
+  .product-info {
+    max-width: 400px;
+  }
+
+  .product-logo {
+    max-width: 150px;
+    margin-bottom: 1rem;
+  }
+
+  .product-text {
+    color: #444;
+    margin-bottom: 1.5rem;
+  }
+
+  .product-content {
+  display: flex;
+  flex-direction: row; /* Gambar di kanan */
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-image {
+  flex: 1;
+  text-align: center;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.product-features li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.product-features li img {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.75rem;
+}
+
+.learn-more {
+  color: #e91e63;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.learn-more:hover {
+  color: #c2185b;
+}
+
+@media (max-width: 768px) {
+  .product-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-info {
+    text-align: center;
+  }
+
+  .product-features li {
+    justify-content: center;
+  }
+}
+
+
+
+
+  .value-section {
+  background-color: #e3f2fd;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.value-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.value-container h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0d47a1;
+  margin-bottom: 1rem;
+}
+
+.value-container p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
