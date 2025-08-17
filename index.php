@@ -49,34 +49,55 @@
   <link rel="alternate" hreflang="id" href="https://syntra-enterprise.com/" />
 
   <!-- Structured Data JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Syntra Teknologi Indonesia",
-    "applicationCategory": "BusinessApplication",
-    "operatingSystem": "Web, Android, iOS",
-    "offers": {
-      "@type": "Offer",
-      "price": "200000",
-      "priceCurrency": "IDR"
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Syntra Teknologi Indonesia",
+  "applicationCategory": "BusinessApplication", 
+  "operatingSystem": "Web, Android, iOS",
+  "offers": {
+    "@type": "AggregateOffer",
+    "lowPrice": "200000",
+    "highPrice": "700000",
+    "priceCurrency": "IDR",
+    "offerCount": "3"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating", 
+    "ratingValue": "4.8",
+    "ratingCount": "150",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5",
+      "bestRating": "5"
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "ratingCount": "150"
-    },
-    "url": "https://syntra-enterprise.com",
-    "logo": "https://syntra-enterprise.com/assets/syntra-logo.png",
-    "description": "Software bisnis dan aplikasi kustom untuk UMKM dan enterprise. Solusi lengkap sistem POS, ERP & akuntansi.",
-    "sameAs": [
-      "https://www.facebook.com/syntrateknologi",
-      "https://www.instagram.com/syntrateknologi",
-      "https://www.linkedin.com/company/syntra-enterprise-teknologi/",
-      "https://twitter.com/syntrateknologi"
-    ]
-  }
-  </script>
+    "author": {
+      "@type": "Person",
+      "name": "King Visual Indonesia"
+    }
+  },
+  "url": "https://syntra-enterprise.com",
+  "logo": "https://syntra-enterprise.com/assets/syntra-logo.png",
+  "description": "Software bisnis dan aplikasi kustom untuk UMKM dan enterprise. Solusi lengkap sistem POS, ERP & akuntansi.",
+  "sameAs": [
+    "https://www.facebook.com/syntrateknologi",
+    "https://www.instagram.com/syntrateknologi", 
+    "https://www.linkedin.com/company/syntra-enterprise-teknologi/",
+    "https://twitter.com/syntrateknologi"
+  ]
+}
+</script>
+  <?php 
+  define('whatsapp', '6281541277051');
+  define('whatsapp_view', '+62 815-4127-7051');
+  define('email', 'syntrateknologi@gmail.com');
+  ?>
 
   <!-- Preconnect & DNS Prefetch -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -135,6 +156,7 @@
   <main>
     <section class="hero container" style="margin-top: 2rem;" aria-label="Hero Section">
       <div class="hero-text">
+        <h3 itemprop="headline">Syntra Teknologi Indonesia</h1>
         <h1 itemprop="headline">Solusi Digital & Aplikasi Kustom untuk Bisnis Anda</h1>
         <p itemprop="description">Syntra Teknologi Indonesia adalah solusi lengkap untuk pengelolaan bisnis modern —
           mulai dari operasional harian, pencatatan keuangan, hingga pelaporan. Dirancang khusus untuk UMKM dan
@@ -146,7 +168,7 @@
       </div>
       <div class="hero-image">
         <img src="assets/syntra-enterprise.png" alt="Tampilan Dashboard Aplikasi Syntra Teknologi Indonesia"
-          loading="eager" width="600" height="400" itemprop="image" />
+          loading="eager" width="800" height="500" itemprop="image" style="max-width: 100%; height: auto;" />
       </div>
     </section>
 
@@ -494,315 +516,319 @@
         <p>Kami bangga telah menjadi pilihan utama berbagai perusahaan dari berbagai industri.</p>
 
         <div class="owl-carousel clients-logos">
-  <div class="item">
-    <img src="assets/client/kvi_advertising.jpg" alt="King Visual Indonesia" loading="lazy">
-  </div>
-  <div class="item">
-    <img src="assets/client/mpi.jpg" alt="Media Printer Indonesia" loading="lazy">
-  </div>
+          <div class="item">
+            <img src="assets/client/kvi_advertising.jpg" alt="King Visual Indonesia" loading="lazy">
+          </div>
+          <div class="item">
+            <img src="assets/client/mpi.jpg" alt="Media Printer Indonesia" loading="lazy">
+          </div>
 
-</div>
-
-
-<style>
-.clients-logos {
-  position: relative;
-  width: 100%;
-  padding: 0 40px;
-  margin: 40px 0;
-}
-
-.clients-slider {
-  overflow: hidden;
-  width: 100%;
-}
-
-.clients-track {
-  display: flex;
-  transition: transform 0.5s ease;
-  gap: 30px;
-}
-
-.clients-track img {
-  flex: 0 0 auto;
-  width: calc(100% / var(--slides-per-view));
-  max-width: 200px;
-  height: 100px;
-  object-fit: contain;
-  border-radius: 8px;
-  padding: 10px;
-}
-
-.slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 50%;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  cursor: pointer;
-  z-index: 2;
-  transition: all 0.3s ease;
-}
-
-.slider-btn:hover {
-  background: #f5f5f5;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-.slider-btn.prev {
-  left: 0;
-}
-
-.slider-btn.next {
-  right: 0;
-}
-
-.slider-btn svg {
-  fill: #666;
-}
-
-/* Responsive breakpoints */
-@media (min-width: 1200px) {
-  .clients-track {
-    --slides-per-view: 5;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .clients-track {
-    --slides-per-view: 4;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .clients-track {
-    --slides-per-view: 3;
-  }
-}
-
-@media (max-width: 767px) {
-  .clients-track {
-    --slides-per-view: 2;
-  }
-  
-  .clients-logos {
-    padding: 0 20px;
-  }
-  
-  .slider-btn {
-    width: 32px;
-    height: 32px;
-  }
-}
-
-@media (max-width: 480px) {
-  .clients-track {
-    --slides-per-view: 1;
-  }
-}
-</style>
+        </div>
 
 
-<style>
-@media (max-width: 768px) {
-  .slider-btn {
-    display: none;
-  }
-  
-  .clients-logos {
-    padding: 0;
-  }
-  
-  .clients-slider {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-  }
-  
-  .clients-track {
-    scroll-snap-align: start;
-  }
-}
-</style>
-<style>
-.clients-logos {
-  position: relative;
-  width: 100%;
-  padding: 0 40px;
-  overflow: hidden;
-}
+        <style>
+          .clients-logos {
+            position: relative;
+            width: 100%;
+            padding: 0 40px;
+            margin: 40px 0;
+          }
 
-.clients-slider {
-  overflow: hidden;
-  width: 100%;
-}
+          .clients-slider {
+            overflow: hidden;
+            width: 100%;
+          }
 
-.clients-track {
-  display: flex;
-  transition: transform 0.3s ease-in-out;
-  gap: 20px;
-}
+          .clients-track {
+            display: flex;
+            transition: transform 0.5s ease;
+            gap: 30px;
+          }
 
-.clients-track img {
-  flex: 0 0 200px;
-  width: 200px;
-  height: 100px;
-  object-fit: contain;
-}
+          .clients-track img {
+            flex: 0 0 auto;
+            width: calc(100% / var(--slides-per-view));
+            max-width: 200px;
+            height: 100px;
+            object-fit: contain;
+            border-radius: 8px;
+            padding: 10px;
+          }
 
-.slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 50%;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  cursor: pointer;
-  z-index: 1;
-}
+          .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 50%;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+            z-index: 2;
+            transition: all 0.3s ease;
+          }
 
-.slider-btn.prev {
-  left: 0;
-}
+          .slider-btn:hover {
+            background: #f5f5f5;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+          }
 
-.slider-btn.next {
-  right: 0;
-}
+          .slider-btn.prev {
+            left: 0;
+          }
 
-.slider-btn svg {
-  fill: #666;
-}
-</style>
+          .slider-btn.next {
+            right: 0;
+          }
+
+          .slider-btn svg {
+            fill: #666;
+          }
+
+          /* Responsive breakpoints */
+          @media (min-width: 1200px) {
+            .clients-track {
+              --slides-per-view: 5;
+            }
+          }
+
+          @media (min-width: 992px) and (max-width: 1199px) {
+            .clients-track {
+              --slides-per-view: 4;
+            }
+          }
+
+          @media (min-width: 768px) and (max-width: 991px) {
+            .clients-track {
+              --slides-per-view: 3;
+            }
+          }
+
+          @media (max-width: 767px) {
+            .clients-track {
+              --slides-per-view: 2;
+            }
+
+            .clients-logos {
+              padding: 0 20px;
+            }
+
+            .slider-btn {
+              width: 32px;
+              height: 32px;
+            }
+          }
+
+          @media (max-width: 480px) {
+            .clients-track {
+              --slides-per-view: 1;
+            }
+          }
+        </style>
 
 
-<style>
-.clients-track {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  padding: 20px;
-}
+        <style>
+          @media (max-width: 768px) {
+            .slider-btn {
+              display: none;
+            }
 
-.clients-track img {
-  max-width: 300px;
-  height: auto;
-  object-fit: contain;
-}
-</style>
-<style>
-.clients-logos {
-  position: relative;
-  width: 100%;
-  padding: 0 40px;
-}
+            .clients-logos {
+              padding: 0;
+            }
 
-.clients-slider {
-  overflow: hidden;
-}
+            .clients-slider {
+              overflow-x: auto;
+              -webkit-overflow-scrolling: touch;
+              scroll-snap-type: x mandatory;
+            }
 
-.clients-track {
-  display: flex;
-  transition: transform 0.3s ease-in-out;
-}
+            .clients-track {
+              scroll-snap-align: start;
+            }
+          }
+        </style>
+        <style>
+          .clients-logos {
+            position: relative;
+            width: 100%;
+            padding: 0 40px;
+            overflow: hidden;
+          }
 
-.clients-track img {
-  flex-shrink: 0;
-  padding: 10px;
-  object-fit: contain;
-}
+          .clients-slider {
+            overflow: hidden;
+            width: 100%;
+          }
 
-/* Responsive image widths */
-@media (min-width: 1200px) {
-  .clients-track img {
-    width: 16.666%; /* 6 items */
-  }
-}
+          .clients-track {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+            gap: 20px;
+          }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-  .clients-track img {
-    width: 25%; /* 4 items */
-  }
-}
+          .clients-track img {
+            flex: 0 0 200px;
+            width: 200px;
+            height: 100px;
+            object-fit: contain;
+          }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .clients-track img {
-    width: 33.333%; /* 3 items */
-  }
-}
+          .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 50%;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            z-index: 1;
+          }
 
-@media (max-width: 767px) {
-  .clients-track img {
-    width: 50%; /* 2 items */
-  }
-}
+          .slider-btn.prev {
+            left: 0;
+          }
 
-.slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 50%;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-}
+          .slider-btn.next {
+            right: 0;
+          }
 
-.slider-btn:hover {
-  background: #f5f5f5;
-}
+          .slider-btn svg {
+            fill: #666;
+          }
+        </style>
 
-.slider-btn.prev {
-  left: 0;
-}
 
-.slider-btn.next {
-  right: 0;
-}
+        <style>
+          .clients-track {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding: 20px;
+          }
 
-.slider-btn svg {
-  fill: #666;
-}
-</style>
+          .clients-track img {
+            max-width: 300px;
+            height: auto;
+            object-fit: contain;
+          }
+        </style>
+        <style>
+          .clients-logos {
+            position: relative;
+            width: 100%;
+            padding: 0 40px;
+          }
 
-<script>
-let position = 0;
-const track = document.querySelector('.clients-track');
+          .clients-slider {
+            overflow: hidden;
+          }
 
-function slideClients(direction) {
-  const width = document.querySelector('.clients-track img').offsetWidth;
-  const maxPosition = track.children.length - getVisibleSlides();
-  
-  position = Math.max(Math.min(position + direction, maxPosition), 0);
-  track.style.transform = `translateX(-${position * width}px)`;
-}
+          .clients-track {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+          }
 
-function getVisibleSlides() {
-  if (window.innerWidth >= 1200) return 6;
-  if (window.innerWidth >= 992) return 4;
-  if (window.innerWidth >= 768) return 3;
-  return 2;
-}
+          .clients-track img {
+            flex-shrink: 0;
+            padding: 10px;
+            object-fit: contain;
+          }
 
-window.addEventListener('resize', () => {
-  position = 0;
-  track.style.transform = 'translateX(0)';
-});
-</script>
-        
+          /* Responsive image widths */
+          @media (min-width: 1200px) {
+            .clients-track img {
+              width: 16.666%;
+              /* 6 items */
+            }
+          }
+
+          @media (min-width: 992px) and (max-width: 1199px) {
+            .clients-track img {
+              width: 25%;
+              /* 4 items */
+            }
+          }
+
+          @media (min-width: 768px) and (max-width: 991px) {
+            .clients-track img {
+              width: 33.333%;
+              /* 3 items */
+            }
+          }
+
+          @media (max-width: 767px) {
+            .clients-track img {
+              width: 50%;
+              /* 2 items */
+            }
+          }
+
+          .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 50%;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+          }
+
+          .slider-btn:hover {
+            background: #f5f5f5;
+          }
+
+          .slider-btn.prev {
+            left: 0;
+          }
+
+          .slider-btn.next {
+            right: 0;
+          }
+
+          .slider-btn svg {
+            fill: #666;
+          }
+        </style>
+
+        <script>
+          let position = 0;
+          const track = document.querySelector('.clients-track');
+
+          function slideClients(direction) {
+            const width = document.querySelector('.clients-track img').offsetWidth;
+            const maxPosition = track.children.length - getVisibleSlides();
+
+            position = Math.max(Math.min(position + direction, maxPosition), 0);
+            track.style.transform = `translateX(-${position * width}px)`;
+          }
+
+          function getVisibleSlides() {
+            if (window.innerWidth >= 1200) return 6;
+            if (window.innerWidth >= 992) return 4;
+            if (window.innerWidth >= 768) return 3;
+            return 2;
+          }
+
+          window.addEventListener('resize', () => {
+            position = 0;
+            track.style.transform = 'translateX(0)';
+          });
+        </script>
+
       </div>
     </section>
 
@@ -825,7 +851,7 @@ window.addEventListener('resize', () => {
               </div>
               <div class="contact-method">Email</div>
               <div class="contact-info">
-                <a href="mailto:kevinalnizar@gmail.com">kevinalnizar@gmail.com</a>
+                <a href="mailto:<?php echo email; ?>"><?php echo email; ?></a>
               </div>
             </div>
 
@@ -838,7 +864,7 @@ window.addEventListener('resize', () => {
               </div>
               <div class="contact-method">WhatsApp</div>
               <div class="contact-info">
-                <a href="#" onclick="sendWhatsApp()">+62 815-4127-7051</a>
+                <a href="#" onclick="sendWhatsApp()"><?php echo whatsapp_view; ?></a>
               </div>
             </div>
 
@@ -874,7 +900,8 @@ window.addEventListener('resize', () => {
                   </svg>
                   Konsultasi Gratis via WhatsApp
                 </a>
-                <a href="mailto:kevinalnizar@gmail.com?subject=Konsultasi%20Solusi%20Digital%20Syntra" class="cta-btn">
+                <a href="mailto:syntrateknologi@gmail.com?subject=Konsultasi%20Solusi%20Digital%20Syntra"
+                  class="cta-btn">
                   <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                       d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -929,7 +956,7 @@ window.addEventListener('resize', () => {
 
   <script>
     function sendWhatsApp() {
-      const phoneNumber = '6281541277051'; // Ganti dengan nomor tujuan (tanpa tanda +)
+      const phoneNumber = '<?php echo whatsapp; ?>'; // Ganti dengan nomor tujuan (tanpa tanda +)
       const message = encodeURIComponent('Halo, saya tertarik dengan layanan kustom aplikasi di Syntra Teknologi .');
       const url = `https://wa.me/${phoneNumber}?text=${message}`;
       window.open(url, '_blank');
