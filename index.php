@@ -118,6 +118,116 @@
 <link href="assets/contact.css" rel="stylesheet" type="text/css" />
 <link href="assets/produk.css" rel="stylesheet" type="text/css" />
 
+<!-- modal -->
+ <style>
+.show-modal-btn {
+  padding: 12px 24px;
+  background-color: #1A73E8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.show-modal-btn:hover {
+  background-color: #1557b0;
+}
+</style>
+<style>
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    max-width: 900px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  .modal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .modal-image {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .modal-form {
+    padding: 30px;
+    position: relative;
+  }
+  .close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+  }
+  .close:hover { color: #000; }
+  .form-group { margin-bottom: 15px; }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .form-group textarea { resize: vertical; }
+  .button-group { display: flex; gap: 10px; }
+  .whatsapp-btn {
+    flex: 1;
+    padding: 12px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  .whatsapp-btn i { margin-right: 8px; }
+  .whatsapp-btn:hover { background-color: #128C7E; }
+  .submit-btn {
+    flex: 1;
+    padding: 12px;
+    background-color: #1A73E8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .submit-btn:hover { background-color: #1557b0; }
+  @media (max-width: 768px) {
+    .modal-grid { grid-template-columns: 1fr; }
+    .modal-image { display: none; }
+    .modal-content { margin: 10% auto; }
+  }
+</style>
+<!-- end modal css -->
 
 <body>
 
@@ -161,8 +271,9 @@
         <p itemprop="description">Syntra Teknologi Indonesia adalah solusi lengkap untuk pengelolaan bisnis modern —
           mulai dari operasional harian, pencatatan keuangan, hingga pelaporan. Dirancang khusus untuk UMKM dan
           enterprise yang butuh sistem scalable dan aman.</p>
-        <a href="#contact" onclick="sendWhatsApp()" class="btn-primary" role="button"
-          aria-label="Tanya via WhatsApp">Tanya Aja Dulu</a>
+        <a href="#" id="showModalBtn"  class="btn-primary" role="button"
+          aria-label="Tanya via WhatsApp">Coba Gratis</a>
+
         <a href="#contact" onclick="sendWhatsApp()" class="btn-primary" role="button"
           aria-label="Konsultasi via WhatsApp">Konsultasi Gratis</a>
       </div>
@@ -923,6 +1034,98 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="wa-icon" />
     <span>WhatsApp Kami</span>
   </a>
+
+  <!-- modal -->
+<!-- <button id="showModalBtn" class="show-modal-btn">Konsultasi Gratis</button> -->
+
+
+
+<!-- Modal Popup -->
+<div id="welcomeModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-grid">
+      <div class="modal-image">
+        <img src="assets/modal_image.png" alt="Konsultasi Solusi Digital"
+          style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+      </div>
+      <div class="modal-form">
+        <span class="close">&times;</span>
+        <h2>Konsultasi Gratis</h2>
+        <p>Silakan isi form berikut untuk mendapatkan solusi digital terbaik untuk bisnis Anda</p>
+        <form id="consultationForm" style="margin-top: 8px">
+          <div class="form-group">
+            <input type="text" id="fullName" name="fullName" placeholder="Nama Lengkap" required>
+          </div>
+          <div class="form-group">
+            <input type="text" id="companyName" name="companyName" placeholder="Nama Perusahaan" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" id="phone" name="phone" placeholder="No. Telepon" required>
+          </div>
+          <div class="form-group">
+            <textarea id="needs" name="needs" placeholder="Jelaskan kebutuhan Anda" rows="4" required></textarea>
+          </div>
+          <div class="button-group">
+            <a href="https://wa.me/your-number" class="whatsapp-btn">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="wa-icon" />
+              Mulai Konsultasi
+            </a>
+            <button type="submit" class="submit-btn">Mulai Uji Coba</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const showModalBtn = document.getElementById("showModalBtn");
+  const modal = document.getElementById("welcomeModal");
+  const closeBtn = modal.querySelector(".close");
+  const form = document.getElementById("consultationForm");
+
+  // Show modal on page load
+  modal.style.display = "block";
+
+  // Show modal on button click
+  showModalBtn.addEventListener("click", () => {
+    modal.style.display = "block";
+  });
+
+  // Close modal when clicking X
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // Close modal when clicking outside
+  window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+  // Handle form submission
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const formData = {
+      fullName: document.getElementById("fullName").value,
+      companyName: document.getElementById("companyName").value,
+      email: document.getElementById("email").value,
+      phone: document.getElementById("phone").value,
+      needs: document.getElementById("needs").value
+    };
+    console.log("Form Data:", formData);
+    modal.style.display = "none";
+  });
+});
+</script>
+
+  <!-- end modal -->
 
   <style>
     .wa-float {
