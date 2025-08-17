@@ -1069,10 +1069,10 @@
             <textarea id="needs" name="needs" placeholder="Jelaskan kebutuhan Anda" rows="4" required></textarea>
           </div>
           <div class="button-group">
-            <a href="https://wa.me/your-number" class="whatsapp-btn">
+            <span onclick="sendWhatsApp()" class="whatsapp-btn">
               <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="wa-icon" />
               Mulai Konsultasi
-            </a>
+          </span>
             <button type="submit" class="submit-btn">Mulai Uji Coba</button>
           </div>
         </form>
