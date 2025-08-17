@@ -75,12 +75,18 @@
     "reviewRating": {
       "@type": "Rating",
       "ratingValue": "5",
-      "bestRating": "5"
+      "bestRating": "5",
+      "worstRating": "1"
     },
     "author": {
       "@type": "Person",
       "name": "King Visual Indonesia"
-    }
+    },
+    "itemReviewed": {
+      "@type": "SoftwareApplication",
+      "name": "Syntra Teknologi Indonesia"
+    },
+    "reviewBody": "Software bisnis yang sangat membantu dalam mengelola operasional perusahaan. Interface yang user-friendly dan fitur yang lengkap."
   },
   "url": "https://syntra-enterprise.com",
   "logo": "https://syntra-enterprise.com/assets/syntra-logo.png",
