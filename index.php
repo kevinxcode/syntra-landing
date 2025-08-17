@@ -375,9 +375,9 @@
       <div class="container">
 
         <h2 class="section-title" itemprop="name">Solusi Digital Terintegrasi untuk Bisnis Modern</h2>
-<p class="section-description" itemprop="description">
-  Aplikasi Syntra dikembangkan untuk memenuhi kebutuhan bisnis dari skala kecil hingga enterprise
-</p>
+        <p class="section-description" itemprop="description">
+          Aplikasi Syntra dikembangkan untuk memenuhi kebutuhan bisnis dari skala kecil hingga enterprise
+        </p>
         <div class="product-content">
           <!-- INFO di kiri -->
           <div class="product-info">
