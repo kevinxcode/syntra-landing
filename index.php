@@ -378,6 +378,10 @@
     </section>
 
     <section id="produk" class="product-section" itemscope itemtype="http://schema.org/Product">
+      <div itemprop="offers" itemscope itemtype="http://schema.org/Offer" style="display: none;">
+        <span itemprop="price">200000</span>
+        <span itemprop="priceCurrency">IDR</span>
+      </div>
       <div class="container">
 
         <h2 class="section-title" itemprop="name">Solusi Digital Terintegrasi untuk Bisnis Modern</h2>
