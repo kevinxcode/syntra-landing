@@ -1,5 +1,9 @@
 <html lang="id">
-
+  <?php 
+  define('whatsapp', '6287884404855');
+  define('whatsapp_view', '+62 878-8440-4855');
+  define('email', 'syntrateknologi@gmail.com');
+  ?>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -99,11 +103,7 @@
   ]
 }
 </script>
-  <?php 
-  define('whatsapp', '6281541277051');
-  define('whatsapp_view', '+62 815-4127-7051');
-  define('email', 'syntrateknologi@gmail.com');
-  ?>
+
 
   <!-- Preconnect & DNS Prefetch -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
