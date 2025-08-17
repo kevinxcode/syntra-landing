@@ -493,16 +493,318 @@
         <h2>Dipercaya oleh Berbagai Bisnis</h2>
         <p>Kami bangga telah menjadi pilihan utama berbagai perusahaan dari berbagai industri.</p>
 
-        <div class="clients-logos">
-          <img src="assets//client/kvi_advertising.jpg" alt="King Visual Indonesia">
-          <img src="assets//client/mpi.jpg" alt="Media Printer Indonesia">
+        <div class="owl-carousel clients-logos">
+  <div class="item">
+    <img src="assets/client/kvi_advertising.jpg" alt="King Visual Indonesia" loading="lazy">
+  </div>
+  <div class="item">
+    <img src="assets/client/mpi.jpg" alt="Media Printer Indonesia" loading="lazy">
+  </div>
 
-        </div>
+</div>
+
+
+<style>
+.clients-logos {
+  position: relative;
+  width: 100%;
+  padding: 0 40px;
+  margin: 40px 0;
+}
+
+.clients-slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.clients-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 30px;
+}
+
+.clients-track img {
+  flex: 0 0 auto;
+  width: calc(100% / var(--slides-per-view));
+  max-width: 200px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.slider-btn:hover {
+  background: #f5f5f5;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.slider-btn.prev {
+  left: 0;
+}
+
+.slider-btn.next {
+  right: 0;
+}
+
+.slider-btn svg {
+  fill: #666;
+}
+
+/* Responsive breakpoints */
+@media (min-width: 1200px) {
+  .clients-track {
+    --slides-per-view: 5;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .clients-track {
+    --slides-per-view: 4;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .clients-track {
+    --slides-per-view: 3;
+  }
+}
+
+@media (max-width: 767px) {
+  .clients-track {
+    --slides-per-view: 2;
+  }
+  
+  .clients-logos {
+    padding: 0 20px;
+  }
+  
+  .slider-btn {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .clients-track {
+    --slides-per-view: 1;
+  }
+}
+</style>
+
+
+<style>
+@media (max-width: 768px) {
+  .slider-btn {
+    display: none;
+  }
+  
+  .clients-logos {
+    padding: 0;
+  }
+  
+  .clients-slider {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .clients-track {
+    scroll-snap-align: start;
+  }
+}
+</style>
+<style>
+.clients-logos {
+  position: relative;
+  width: 100%;
+  padding: 0 40px;
+  overflow: hidden;
+}
+
+.clients-slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.clients-track {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  gap: 20px;
+}
+
+.clients-track img {
+  flex: 0 0 200px;
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.slider-btn.prev {
+  left: 0;
+}
+
+.slider-btn.next {
+  right: 0;
+}
+
+.slider-btn svg {
+  fill: #666;
+}
+</style>
+
+
+<style>
+.clients-track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+.clients-track img {
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+</style>
+<style>
+.clients-logos {
+  position: relative;
+  width: 100%;
+  padding: 0 40px;
+}
+
+.clients-slider {
+  overflow: hidden;
+}
+
+.clients-track {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.clients-track img {
+  flex-shrink: 0;
+  padding: 10px;
+  object-fit: contain;
+}
+
+/* Responsive image widths */
+@media (min-width: 1200px) {
+  .clients-track img {
+    width: 16.666%; /* 6 items */
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .clients-track img {
+    width: 25%; /* 4 items */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .clients-track img {
+    width: 33.333%; /* 3 items */
+  }
+}
+
+@media (max-width: 767px) {
+  .clients-track img {
+    width: 50%; /* 2 items */
+  }
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.slider-btn:hover {
+  background: #f5f5f5;
+}
+
+.slider-btn.prev {
+  left: 0;
+}
+
+.slider-btn.next {
+  right: 0;
+}
+
+.slider-btn svg {
+  fill: #666;
+}
+</style>
+
+<script>
+let position = 0;
+const track = document.querySelector('.clients-track');
+
+function slideClients(direction) {
+  const width = document.querySelector('.clients-track img').offsetWidth;
+  const maxPosition = track.children.length - getVisibleSlides();
+  
+  position = Math.max(Math.min(position + direction, maxPosition), 0);
+  track.style.transform = `translateX(-${position * width}px)`;
+}
+
+function getVisibleSlides() {
+  if (window.innerWidth >= 1200) return 6;
+  if (window.innerWidth >= 992) return 4;
+  if (window.innerWidth >= 768) return 3;
+  return 2;
+}
+
+window.addEventListener('resize', () => {
+  position = 0;
+  track.style.transform = 'translateX(0)';
+});
+</script>
+        
       </div>
     </section>
-
-
-
 
     <section class="contact-section">
       <div class="container">
