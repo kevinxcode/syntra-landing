@@ -513,7 +513,7 @@
         <div class="unggulan-stats" itemscope itemtype="http://schema.org/Organization">
           <div class="unggulan-stats-grid">
             <div class="unggulan-stat-item">
-              <span class="stat-number" itemprop="aggregateRating">5+</span>
+              <span class="stat-number">5+</span>
               <span class="stat-label">Klien Sukses</span>
             </div>
             <div class="unggulan-stat-item">
