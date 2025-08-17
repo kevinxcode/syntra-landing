@@ -266,7 +266,7 @@
   <main>
     <section class="hero container" style="margin-top: 2rem;" aria-label="Hero Section">
       <div class="hero-text">
-        <h3 itemprop="headline">Syntra Teknologi Indonesia</h1>
+        <h3 itemprop="headline">Syntra Teknologi Indonesia</h3>
         <h1 itemprop="headline">Solusi Digital & Aplikasi Kustom untuk Bisnis Anda</h1>
         <p itemprop="description">Syntra Teknologi Indonesia adalah solusi lengkap untuk pengelolaan bisnis modern —
           mulai dari operasional harian, pencatatan keuangan, hingga pelaporan. Dirancang khusus untuk UMKM dan
