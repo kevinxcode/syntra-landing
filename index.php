@@ -371,7 +371,7 @@
       </div>
     </section>
 
-    <section id="product-Syntra" class="product-section" itemscope itemtype="http://schema.org/Product">
+    <section id="produk" class="product-section" itemscope itemtype="http://schema.org/Product">
       <div class="container">
 
         <h2 class="section-title" itemprop="name">Semakin Mudah dengan Aplikasi Website dan Mobile</h2>
