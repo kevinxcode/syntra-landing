@@ -1,9 +1,8 @@
-<html lang="id">
-  <?php 
-  define('whatsapp', '6287884404855');
-  define('whatsapp_view', '+62 878-8440-4855');
-  define('email', 'syntrateknologi@gmail.com');
-  ?>
+<?php
+define('email', 'syntrateknologi@gmail.com');
+?>
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,21 +10,37 @@
   <!-- Meta SEO -->
   <title>Syntra Teknologi Indonesia | Software Bisnis & Aplikasi Kustom untuk UMKM dan Enterprise</title>
   <meta name="description"
-    content="Syntra Teknologi Indonesia menyediakan software bisnis dan aplikasi kustom untuk UMKM dan enterprise. Solusi lengkap untuk sistem POS, ERP, akuntansi dan manajemen bisnis dengan harga terjangkau." />
+    content="Syntra Teknologi Indonesia menyediakan software bisnis dan aplikasi kustom untuk UMKM dan enterprise. Solusi lengkap untuk sistem POS, ERP, akuntansi dan manajemen bisnis mulai Rp 99.000/bulan." />
   <meta name="keywords"
     content="software bisnis murah, aplikasi kasir terbaik, sistem ERP indonesia, aplikasi POS android, software akuntansi UMKM, Syntra Teknologi, aplikasi bisnis kustom" />
   <meta name="author" content="Syntra Teknologi Indonesia" />
+  <meta name="publisher" content="Syntra Teknologi Indonesia" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="bingbot" content="index, follow" />
+
+  <!-- AI Crawler Directives (LLM training & answer engines) -->
+  <meta name="GPTBot" content="index, follow" />
+  <meta name="Google-Extended" content="index, follow" />
+  <meta name="ClaudeBot" content="index, follow" />
+  <meta name="PerplexityBot" content="index, follow" />
+  <meta name="CCBot" content="index, follow" />
+  <meta name="anthropic-ai" content="index, follow" />
+
   <meta name="language" content="id-ID" />
-  <meta name="geo.region" content="ID" />
+  <meta name="geo.region" content="ID-JK" />
   <meta name="geo.placename" content="Jakarta" />
+  <meta name="geo.position" content="-6.2088;106.8456" />
+  <meta name="ICBM" content="-6.2088, 106.8456" />
   <meta name="theme-color" content="#1A73E8" />
+  <meta name="format-detection" content="email=yes" />
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon.png">
-  <link rel="manifest" href="sitemap.xml">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
+  <link rel="alternate" type="text/plain" title="LLM Content Map" href="/llms.txt">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Software Bisnis & Aplikasi Kustom untuk UMKM | Syntra Teknologi Indonesia" />
@@ -51,6 +66,8 @@
   <!-- Canonical URL -->
   <link rel="canonical" href="https://syntra-enterprise.com/" />
   <link rel="alternate" hreflang="id" href="https://syntra-enterprise.com/" />
+  <link rel="alternate" hreflang="x-default" href="https://syntra-enterprise.com/" />
+  <link rel="alternate" type="application/rss+xml" title="Blog Syntra Teknologi" href="https://syntra-enterprise.com/blog/feed" />
 
   <!-- Structured Data JSON-LD -->
 <script type="application/ld+json">
@@ -62,7 +79,7 @@
   "operatingSystem": "Web, Android, iOS",
   "offers": {
     "@type": "AggregateOffer",
-    "lowPrice": "200000",
+    "lowPrice": "99000",
     "highPrice": "700000",
     "priceCurrency": "IDR",
     "offerCount": "3"
@@ -97,13 +114,153 @@
   "description": "Software bisnis dan aplikasi kustom untuk UMKM dan enterprise. Solusi lengkap sistem POS, ERP & akuntansi.",
   "sameAs": [
     "https://www.facebook.com/syntrateknologi",
-    "https://www.instagram.com/syntrateknologi", 
+    "https://www.instagram.com/syntrateknologi",
     "https://www.linkedin.com/company/syntra-enterprise-teknologi/",
     "https://twitter.com/syntrateknologi"
   ]
 }
 </script>
 
+<!-- Organization Schema (untuk knowledge graph & AI answer engines) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Syntra Teknologi Indonesia",
+  "alternateName": "Syntra Enterprise",
+  "url": "https://syntra-enterprise.com",
+  "logo": "https://syntra-enterprise.com/assets/syntra-logo.png",
+  "image": "https://syntra-enterprise.com/assets/og-image.jpg",
+  "description": "Perusahaan pengembang software bisnis dan aplikasi kustom di Indonesia yang melayani UMKM dan enterprise dengan solusi POS, ERP, akuntansi, dan manajemen bisnis terintegrasi.",
+  "foundingDate": "2021",
+  "email": "syntrateknologi@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Jakarta",
+    "addressRegion": "DKI Jakarta",
+    "addressCountry": "ID"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Indonesia"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "syntrateknologi@gmail.com",
+    "contactType": "customer service",
+    "areaServed": "ID",
+    "availableLanguage": ["id", "en"]
+  },
+  "sameAs": [
+    "https://www.facebook.com/syntrateknologi",
+    "https://www.instagram.com/syntrateknologi",
+    "https://www.linkedin.com/company/syntra-enterprise-teknologi/",
+    "https://twitter.com/syntrateknologi"
+  ]
+}
+</script>
+
+<!-- FAQ Schema (memberi konteks kaya untuk AI answer engines) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Apa itu Syntra Teknologi Indonesia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Syntra Teknologi Indonesia adalah penyedia software bisnis dan aplikasi kustom untuk UMKM dan enterprise, dengan solusi POS, ERP, akuntansi, dan manajemen bisnis yang terintegrasi."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Berapa harga software Syntra?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Harga paket dimulai dari Rp 99.000 per bulan untuk Paket Dasar UMKM, Rp 1.990.000 per tahun (setara Rp 165.833 per bulan) untuk Paket Bisnis Tahunan, dan mulai Rp 700.000 per proyek untuk solusi enterprise kustom."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apakah ada uji coba gratis?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ya, semua paket berlangganan menyediakan uji coba gratis selama 30 hari penuh tanpa biaya tambahan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apakah aplikasi bisa diakses dari mobile?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ya, aplikasi Syntra dapat diakses dari web, Android, dan iOS sehingga Anda dapat mengelola bisnis dari mana saja."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apakah Syntra menyediakan kustomisasi sesuai kebutuhan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ya, Syntra menyediakan solusi 100% custom yang disesuaikan dengan proses bisnis Anda, termasuk integrasi sistem dan dukungan teknis 24/7."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apakah Syntra mendukung integrasi QRIS dan e-Faktur Coretax?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ya, modul POS dan billing Syntra mendukung pembayaran QRIS (termasuk QRIS Tap berbasis NFC) dan ekspor faktur sesuai format Coretax DJP, memastikan kepatuhan pajak dan transaksi non-tunai berjalan lancar."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Beranda",
+      "item": "https://syntra-enterprise.com/"
+    }
+  ]
+}
+</script>
+
+<!-- WebSite Schema dengan SearchAction (sitelinks searchbox) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Syntra Teknologi Indonesia",
+  "alternateName": "Syntra Enterprise",
+  "url": "https://syntra-enterprise.com/",
+  "inLanguage": "id-ID",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Syntra Teknologi Indonesia",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://syntra-enterprise.com/assets/syntra-logo.png"
+    }
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://syntra-enterprise.com/blog?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 
   <!-- Preconnect & DNS Prefetch -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -111,21 +268,17 @@
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
 
-  <!-- SEO-Friendly JS -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      document.title = document.title + " | Mulai dari Rp 200.000/bulan";
-    });
-  </script>
-</head>
+  <!-- Preload hero image untuk LCP -->
+  <link rel="preload" as="image" href="assets/syntra-enterprise.png" fetchpriority="high">
 
-<link href="assets/style.css" rel="stylesheet" type="text/css" />
-<link href="assets/header.css" rel="stylesheet" type="text/css" />
-<link href="assets/contact.css" rel="stylesheet" type="text/css" />
-<link href="assets/produk.css" rel="stylesheet" type="text/css" />
+  <!-- Stylesheets -->
+  <link href="assets/style.css" rel="stylesheet" type="text/css" />
+  <link href="assets/header.css" rel="stylesheet" type="text/css" />
+  <link href="assets/contact.css" rel="stylesheet" type="text/css" />
+  <link href="assets/produk.css" rel="stylesheet" type="text/css" />
 
-<!-- modal -->
- <style>
+  <!-- modal -->
+  <style>
 .show-modal-btn {
   padding: 12px 24px;
   background-color: #1A73E8;
@@ -200,21 +353,24 @@
   }
   .form-group textarea { resize: vertical; }
   .button-group { display: flex; gap: 10px; }
-  .whatsapp-btn {
+  .email-btn {
     flex: 1;
     padding: 12px;
-    background-color: #25D366;
+    background-color: #1A73E8;
     color: white;
+    border: none;
     border-radius: 5px;
     font-size: 16px;
     text-decoration: none;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 8px;
     transition: background-color 0.3s ease;
   }
-  .whatsapp-btn i { margin-right: 8px; }
-  .whatsapp-btn:hover { background-color: #128C7E; }
+  .email-btn:hover { background-color: #1557b0; }
+  .email-btn .wa-icon { width: 20px; height: 20px; }
   .submit-btn {
     flex: 1;
     padding: 12px;
@@ -234,14 +390,15 @@
   }
 </style>
 <!-- end modal css -->
+</head>
 
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
 
   <header>
     <div class="container header-content">
       <div class="logo-nav-wrapper">
-        <a href="/" class="logo">
-          <img src="assets/syntra-logo-white.png" alt="Logo Syntra Teknologi Indonesia Teknologi" />
+        <a href="<?php echo base_url(); ?>" class="logo">
+          <img src="assets/syntra-logo-white.png" alt="Logo Syntra Teknologi Indonesia" width="160" height="40" />
         </a>
 
         <div class="hamburger" id="hamburger">
@@ -252,9 +409,10 @@
 
         <nav class="navbar" id="navbar">
           <ul class="nav-menu">
-            <li><a href="/">Beranda</a></li>
+            <li><a href="<?php echo base_url(); ?>">Beranda</a></li>
             <li><a href="#fitur">Fitur</a></li>
             <li><a href="#produk">Produk</a></li>
+            <li><a href="<?php echo base_url('blog'); ?>">Blog</a></li>
             <li><a href="#contact">Kontak</a></li>
             <!-- show on mobile only -->
             <li class="mobile-login"><a href="https://app.syntra-enterprise.com/" target="_blank"
@@ -270,22 +428,22 @@
 
 
   <main>
-    <section class="hero container" style="margin-top: 2rem;" aria-label="Hero Section">
+    <section class="hero container" style="margin-top: 2rem;" aria-labelledby="hero-title">
       <div class="hero-text">
-        <h3 itemprop="headline">Syntra Teknologi Indonesia</h3>
-        <h1 itemprop="headline">Solusi Digital & Aplikasi Kustom untuk Bisnis Anda</h1>
+        <p class="hero-eyebrow" style="font-weight:600;color:#1A73E8;margin-bottom:.5rem;">Syntra Teknologi Indonesia</p>
+        <h1 id="hero-title" itemprop="headline">Solusi Digital & Aplikasi Kustom untuk Bisnis Anda</h1>
         <p itemprop="description">Syntra Teknologi Indonesia adalah solusi lengkap untuk pengelolaan bisnis modern —
           mulai dari operasional harian, pencatatan keuangan, hingga pelaporan. Dirancang khusus untuk UMKM dan
           enterprise yang butuh sistem scalable dan aman.</p>
-        <a href="#" id="showModalBtn"  class="btn-primary" role="button"
-          aria-label="Tanya via WhatsApp">Coba Gratis</a>
+        <a href="#" id="showModalBtn" class="btn-primary" role="button"
+          aria-label="Coba gratis Syntra Teknologi">Coba Gratis</a>
 
-        <a href="#contact" onclick="sendWhatsApp()" class="btn-primary" role="button"
-          aria-label="Konsultasi via WhatsApp">Konsultasi Gratis</a>
+        <a href="#contact" onclick="sendEmail(); return false;" class="btn-primary" role="button"
+          aria-label="Konsultasi gratis via Email">Konsultasi Gratis</a>
       </div>
       <div class="hero-image">
-        <img src="assets/syntra-enterprise.png" alt="Tampilan Dashboard Aplikasi Syntra Teknologi Indonesia"
-          loading="eager" width="800" height="500" itemprop="image" style="max-width: 100%; height: auto;" />
+        <img src="assets/syntra-enterprise.png" alt="Tampilan dashboard aplikasi Syntra Teknologi Indonesia menampilkan modul POS, ERP, dan laporan keuangan"
+          loading="eager" fetchpriority="high" width="800" height="500" itemprop="image" style="max-width: 100%; height: auto;" />
       </div>
     </section>
 
@@ -379,7 +537,7 @@
 
     <section id="produk" class="product-section" itemscope itemtype="http://schema.org/Product">
       <div itemprop="offers" itemscope itemtype="http://schema.org/Offer" style="display: none;">
-        <span itemprop="price">200000</span>
+        <span itemprop="price">99000</span>
         <span itemprop="priceCurrency">IDR</span>
       </div>
       <div class="container">
@@ -403,9 +561,10 @@
               <li><span aria-label="grafik">📈</span> Laporan Instan</li>
               <li><span aria-label="mobile">📱</span> Akses dari Mana Saja (Mobile & Web)</li>
               <li><span aria-label="grafik">📈</span> Website Untuk Bisnis Anda</li>
+              <li><span aria-label="grafik">📈</span> Digital Marketing & Optimasi Lead</li>
             </ul>
             <hr />
-            <a href="#" class="learn-more" onclick="sendWhatsApp()" role="button"
+            <a href="#" class="learn-more" onclick="sendEmail()" role="button"
               aria-label="Pelajari lebih lanjut tentang Syntra">Pelajari Lebih Lanjut →</a>
           </div>
 
@@ -427,8 +586,12 @@
       <div class="pricing" itemscope itemtype="http://schema.org/PriceSpecification">
         <div class="pricing-card" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
           <h3 itemprop="name">Paket Dasar untuk UMKM</h3>
-          <p><strong itemprop="price">Rp 220.500</strong> <span itemprop="priceCurrency" content="IDR">/ bulan</span>
-          </p><br><br><br>
+          <p>
+            <del style="color:#999;font-size:0.95rem;">Rp 220.500</del>
+            <strong itemprop="price" content="99000" style="color:#0d47a1;">Rp 99.000</strong>
+            <span itemprop="priceCurrency" content="IDR">/ bulan</span>
+          </p>
+          <p><span style="color:#e53935;font-weight:bold;">Hemat 55% - Promo UMKM!</span></p>
           <ul itemprop="description">
             <li>1 Data Perusahaan Terintegrasi</li>
             <li>Akses Unlimited untuk Seluruh Tim</li>
@@ -436,16 +599,16 @@
             <li>Gratis Uji Coba 30 Hari Penuh</li>
             <li>Termasuk PPN 11%</li>
           </ul>
-          <button class="cta" onclick="sendWhatsApp()" aria-label="Mulai Uji Coba Gratis Paket Dasar">Mulai
+          <button class="cta" onclick="sendEmail()" aria-label="Mulai Uji Coba Gratis Paket Dasar">Mulai
             Gratis</button>
         </div>
 
         <div class="pricing-card highlight" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
           <h3 itemprop="name">Paket Bisnis Tahunan</h3>
-          <p><strong itemprop="price">Rp 2.400.000</strong> <span itemprop="priceCurrency" content="IDR">/ tahun
+          <p><strong itemprop="price" content="1990000">Rp 1.990.000</strong> <span itemprop="priceCurrency" content="IDR">/ tahun
               pertama</span></p>
-          <p><del>Rp 2.820.000</del> → <strong>Rp 200.000</strong> / bulan</p>
-          <p><span style="color: red; font-weight: bold;">Hemat 26% - Penawaran Terbatas!</span></p>
+          <p><del>Rp 220.000</del> → <strong>Rp 165.833</strong> / bulan</p>
+          <p><span style="color: red; font-weight: bold;">Hemat 25% - Penawaran Terbatas!</span></p>
           <ul itemprop="description">
             <li>1 Data Perusahaan Terintegrasi</li>
             <li>Akses Unlimited untuk Seluruh Tim</li>
@@ -453,7 +616,7 @@
             <li>Gratis Uji Coba 30 Hari Penuh</li>
             <li>Termasuk PPN 11%</li>
           </ul>
-          <button class="cta" onclick="sendWhatsApp()" aria-label="Mulai Uji Coba Gratis Paket Tahunan">Hemat
+          <button class="cta" onclick="sendEmail()" aria-label="Mulai Uji Coba Gratis Paket Tahunan">Hemat
             Sekarang</button>
         </div>
 
@@ -469,7 +632,7 @@
             <li>Dukungan Teknis 24/7</li>
             <li>Estimasi & Timeline Transparan</li>
           </ul>
-          <button class="cta" onclick="sendWhatsApp()" aria-label="Diskusikan Solusi Enterprise">Konsultasi
+          <button class="cta" onclick="sendEmail()" aria-label="Diskusikan Solusi Enterprise">Konsultasi
             Gratis</button>
         </div>
       </div>
@@ -488,9 +651,9 @@
             <li>Full Support: Dari Konsep ke Implementasi</li>
           </ul>
           <div class="konsultasi-cta">
-            <a href="#" onclick="sendWhatsApp()" class="btn-konsultasi" aria-label="Mulai Uji Coba 30 Hari">Mulai Uji
+            <a href="#" onclick="sendEmail()" class="btn-konsultasi" aria-label="Mulai Uji Coba 30 Hari">Mulai Uji
               Coba</a>
-            <a href="#" onclick="sendWhatsApp()" class="btn-konsultasi" aria-label="Konsultasi Gratis">Konsultasi
+            <a href="#" onclick="sendEmail()" class="btn-konsultasi" aria-label="Konsultasi Gratis">Konsultasi
               Gratis</a>
           </div>
         </div>
@@ -625,6 +788,96 @@
               </div>
             </div>
           </div>
+
+          <div class="unggulan-box" itemscope itemtype="https://schema.org/Service">
+            <div class="unggulan-image-wrapper">
+              <img src="assets/a.png" alt="Layanan digital marketing Syntra untuk optimasi kampanye, traffic, dan lead bisnis"
+                width="600" height="400" loading="lazy" itemprop="image" />
+              <div class="unggulan-overlay">
+                <span class="unggulan-badge">Growth Marketing</span>
+              </div>
+            </div>
+            <div class="unggulan-content">
+              <h3 class="unggulan-box-title" itemprop="name">Digital Marketing Growth Suite</h3>
+              <p class="unggulan-box-desc" itemprop="description">
+                Layanan pemasaran digital berbasis data untuk meningkatkan traffic, leads, dan konversi melalui SEO,
+                iklan berbayar, konten, landing page, dan pelaporan performa bulanan.
+              </p>
+              <ul class="unggulan-feature-list">
+                <li>
+                  <div class="unggulan-feature-icon" aria-hidden="true"></div>
+                  <span class="unggulan-feature-text">Strategi SEO & Content Marketing</span>
+                </li>
+                <li>
+                  <div class="unggulan-feature-icon" aria-hidden="true"></div>
+                  <span class="unggulan-feature-text">Manajemen Google Ads & Meta Ads</span>
+                </li>
+                <li>
+                  <div class="unggulan-feature-icon" aria-hidden="true"></div>
+                  <span class="unggulan-feature-text">Optimasi Landing Page & Konversi</span>
+                </li>
+                <li>
+                  <div class="unggulan-feature-icon" aria-hidden="true"></div>
+                  <span class="unggulan-feature-text">Laporan Performa Kampanye Bulanan</span>
+                </li>
+              </ul>
+              <div class="card-actions">
+                <a href="#" onclick="sendEmail({ needs: 'Saya ingin konsultasi layanan Digital Marketing Growth Suite.' }); return false;" class="btn-primary"
+                  aria-label="Konsultasi layanan digital marketing Syntra">
+                  <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                    <path
+                      d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                  </svg>
+                  Konsultasi Digital Marketing
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="unggulan-box" itemscope itemtype="http://schema.org/SoftwareApplication">
+            <div class="unggulan-image-wrapper">
+              <img src="assets/syntra-dashboard.png" alt="Dashboard aplikasi custom Syntra untuk sistem bisnis sesuai kebutuhan"
+                width="600" height="400" loading="lazy" itemprop="image" />
+              <div class="unggulan-overlay">
+                <span class="unggulan-badge">Custom App</span>
+              </div>
+            </div>
+            <div class="unggulan-content">
+              <h3 class="unggulan-box-title" itemprop="name">Aplikasi Custom Bisnis</h3>
+              <p class="unggulan-box-desc" itemprop="description">
+                Pengembangan aplikasi web, mobile, dan dashboard operasional yang dirancang sesuai alur kerja bisnis
+                Anda, mulai dari analisis kebutuhan hingga implementasi dan support.
+              </p>
+              <ul class="unggulan-feature-list">
+                <li>
+                  <div class="unggulan-feature-icon" aria-hidden="true"></div>
+                  <span class="unggulan-feature-text">Analisis Proses Bisnis & Kebutuhan Sistem</span>
+                </li>
+                <li>
+                  <div class="unggulan-feature-icon" aria-hidden="true"></div>
+                  <span class="unggulan-feature-text">UI/UX, Prototype, dan Flow Aplikasi</span>
+                </li>
+                <li>
+                  <div class="unggulan-feature-icon" aria-hidden="true"></div>
+                  <span class="unggulan-feature-text">Aplikasi Web, Mobile, dan Admin Dashboard</span>
+                </li>
+                <li>
+                  <div class="unggulan-feature-icon" aria-hidden="true"></div>
+                  <span class="unggulan-feature-text">Integrasi API, Payment, dan Sistem Internal</span>
+                </li>
+              </ul>
+              <div class="card-actions">
+                <a href="#" onclick="sendEmail({ needs: 'Saya ingin konsultasi pembuatan aplikasi custom untuk bisnis.' }); return false;" class="btn-primary"
+                  aria-label="Konsultasi pembuatan aplikasi custom Syntra">
+                  <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                    <path
+                      d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                  </svg>
+                  Konsultasi Aplikasi Custom
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -653,302 +906,100 @@
             padding: 0 40px;
             margin: 40px 0;
           }
-
-          .clients-slider {
-            overflow: hidden;
-            width: 100%;
-          }
-
-          .clients-track {
-            display: flex;
-            transition: transform 0.5s ease;
-            gap: 30px;
-          }
-
-          .clients-track img {
-            flex: 0 0 auto;
-            width: calc(100% / var(--slides-per-view));
-            max-width: 200px;
-            height: 100px;
-            object-fit: contain;
-            border-radius: 8px;
-            padding: 10px;
-          }
-
-          .slider-btn {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 40px;
-            height: 40px;
-            border: none;
-            border-radius: 50%;
-            background: #fff;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-            cursor: pointer;
-            z-index: 2;
-            transition: all 0.3s ease;
-          }
-
-          .slider-btn:hover {
-            background: #f5f5f5;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-          }
-
-          .slider-btn.prev {
-            left: 0;
-          }
-
-          .slider-btn.next {
-            right: 0;
-          }
-
-          .slider-btn svg {
-            fill: #666;
-          }
-
-          /* Responsive breakpoints */
-          @media (min-width: 1200px) {
-            .clients-track {
-              --slides-per-view: 5;
-            }
-          }
-
-          @media (min-width: 992px) and (max-width: 1199px) {
-            .clients-track {
-              --slides-per-view: 4;
-            }
-          }
-
-          @media (min-width: 768px) and (max-width: 991px) {
-            .clients-track {
-              --slides-per-view: 3;
-            }
-          }
-
-          @media (max-width: 767px) {
-            .clients-track {
-              --slides-per-view: 2;
-            }
-
-            .clients-logos {
-              padding: 0 20px;
-            }
-
-            .slider-btn {
-              width: 32px;
-              height: 32px;
-            }
-          }
-
-          @media (max-width: 480px) {
-            .clients-track {
-              --slides-per-view: 1;
-            }
-          }
-        </style>
-
-
-        <style>
-          @media (max-width: 768px) {
-            .slider-btn {
-              display: none;
-            }
-
-            .clients-logos {
-              padding: 0;
-            }
-
-            .clients-slider {
-              overflow-x: auto;
-              -webkit-overflow-scrolling: touch;
-              scroll-snap-type: x mandatory;
-            }
-
-            .clients-track {
-              scroll-snap-align: start;
-            }
-          }
-        </style>
-        <style>
-          .clients-logos {
-            position: relative;
-            width: 100%;
-            padding: 0 40px;
-            overflow: hidden;
-          }
-
-          .clients-slider {
-            overflow: hidden;
-            width: 100%;
-          }
-
-          .clients-track {
-            display: flex;
-            transition: transform 0.3s ease-in-out;
-            gap: 20px;
-          }
-
-          .clients-track img {
-            flex: 0 0 200px;
-            width: 200px;
-            height: 100px;
-            object-fit: contain;
-          }
-
-          .slider-btn {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 40px;
-            height: 40px;
-            border: none;
-            border-radius: 50%;
-            background: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
-            z-index: 1;
-          }
-
-          .slider-btn.prev {
-            left: 0;
-          }
-
-          .slider-btn.next {
-            right: 0;
-          }
-
-          .slider-btn svg {
-            fill: #666;
-          }
-        </style>
-
-
-        <style>
           .clients-track {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 40px;
             padding: 20px;
+            flex-wrap: wrap;
           }
-
+          .clients-track .item {
+            flex: 0 0 auto;
+          }
           .clients-track img {
-            max-width: 300px;
+            max-width: 220px;
+            max-height: 110px;
             height: auto;
+            width: auto;
             object-fit: contain;
+            transition: transform 0.3s ease, filter 0.3s ease;
+            filter: grayscale(20%);
           }
-        </style>
-        <style>
-          .clients-logos {
-            position: relative;
-            width: 100%;
-            padding: 0 40px;
+          .clients-track img:hover {
+            transform: translateY(-3px);
+            filter: grayscale(0%);
           }
-
-          .clients-slider {
-            overflow: hidden;
-          }
-
-          .clients-track {
-            display: flex;
-            transition: transform 0.3s ease-in-out;
-          }
-
-          .clients-track img {
-            flex-shrink: 0;
-            padding: 10px;
-            object-fit: contain;
-          }
-
-          /* Responsive image widths */
-          @media (min-width: 1200px) {
-            .clients-track img {
-              width: 16.666%;
-              /* 6 items */
-            }
-          }
-
-          @media (min-width: 992px) and (max-width: 1199px) {
-            .clients-track img {
-              width: 25%;
-              /* 4 items */
-            }
-          }
-
-          @media (min-width: 768px) and (max-width: 991px) {
-            .clients-track img {
-              width: 33.333%;
-              /* 3 items */
-            }
-          }
-
           @media (max-width: 767px) {
-            .clients-track img {
-              width: 50%;
-              /* 2 items */
-            }
-          }
-
-          .slider-btn {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 40px;
-            height: 40px;
-            border: none;
-            border-radius: 50%;
-            background: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 1;
-          }
-
-          .slider-btn:hover {
-            background: #f5f5f5;
-          }
-
-          .slider-btn.prev {
-            left: 0;
-          }
-
-          .slider-btn.next {
-            right: 0;
-          }
-
-          .slider-btn svg {
-            fill: #666;
+            .clients-logos { padding: 0 20px; }
+            .clients-track { gap: 20px; }
+            .clients-track img { max-width: 140px; max-height: 70px; }
           }
         </style>
 
-        <script>
-          let position = 0;
-          const track = document.querySelector('.clients-track');
+      </div>
+    </section>
 
-          function slideClients(direction) {
-            const width = document.querySelector('.clients-track img').offsetWidth;
-            const maxPosition = track.children.length - getVisibleSlides();
+    <!-- FAQ Section (visible content matching FAQ schema) -->
+    <section class="faq-section" id="faq" aria-labelledby="faq-title">
+      <style>
+        .faq-section { padding: 4rem 1rem; background: #f8fafc; }
+        .faq-wrapper { max-width: 880px; margin: 0 auto; }
+        .faq-section h2 { text-align: center; color: #0d47a1; margin-bottom: .5rem; font-size: 2rem; }
+        .faq-section .faq-subtitle { text-align: center; color: #555; margin-bottom: 2.5rem; }
+        .faq-item { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; margin-bottom: 12px; overflow: hidden; transition: box-shadow .2s; }
+        .faq-item[open] { box-shadow: 0 4px 12px rgba(0,0,0,.06); }
+        .faq-item summary { cursor: pointer; padding: 18px 22px; font-weight: 600; color: #1a202c; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after { content: "+"; font-size: 1.4rem; color: #1A73E8; transition: transform .2s; }
+        .faq-item[open] summary::after { content: "−"; }
+        .faq-item .faq-answer { padding: 0 22px 20px; color: #475569; line-height: 1.7; }
+      </style>
+      <div class="faq-wrapper">
+        <h2 id="faq-title">Pertanyaan yang Sering Diajukan</h2>
+        <p class="faq-subtitle">Jawaban cepat seputar layanan, harga, dan implementasi software bisnis Syntra.</p>
 
-            position = Math.max(Math.min(position + direction, maxPosition), 0);
-            track.style.transform = `translateX(-${position * width}px)`;
-          }
+        <details class="faq-item" open>
+          <summary>Apa itu Syntra Teknologi Indonesia?</summary>
+          <div class="faq-answer">
+            Syntra Teknologi Indonesia adalah penyedia software bisnis dan aplikasi kustom untuk UMKM dan enterprise di Indonesia. Solusi kami mencakup sistem POS, ERP, akuntansi, manajemen stok multi-gudang, dan integrasi pembayaran digital — semuanya dirancang agar bisnis dapat beroperasi lebih efisien dan scalable.
+          </div>
+        </details>
 
-          function getVisibleSlides() {
-            if (window.innerWidth >= 1200) return 6;
-            if (window.innerWidth >= 992) return 4;
-            if (window.innerWidth >= 768) return 3;
-            return 2;
-          }
+        <details class="faq-item">
+          <summary>Berapa harga software Syntra?</summary>
+          <div class="faq-answer">
+            Harga paket dimulai dari <strong>Rp 99.000 per bulan</strong> untuk Paket Dasar UMKM, <strong>Rp 1.990.000 per tahun</strong> (setara Rp 165.833/bulan) untuk Paket Bisnis Tahunan, dan mulai <strong>Rp 700.000 per proyek</strong> untuk solusi Enterprise Kustom. Semua harga sudah termasuk PPN 11%.
+          </div>
+        </details>
 
-          window.addEventListener('resize', () => {
-            position = 0;
-            track.style.transform = 'translateX(0)';
-          });
-        </script>
+        <details class="faq-item">
+          <summary>Apakah ada uji coba gratis?</summary>
+          <div class="faq-answer">
+            Ya. Setiap paket berlangganan menyediakan uji coba gratis 30 hari penuh tanpa biaya tambahan dan tanpa kewajiban berlangganan setelahnya.
+          </div>
+        </details>
 
+        <details class="faq-item">
+          <summary>Apakah aplikasi bisa diakses dari mobile?</summary>
+          <div class="faq-answer">
+            Aplikasi Syntra dapat diakses melalui Web, Android, dan iOS. Tim Anda dapat mengelola penjualan, stok, dan laporan dari mana saja secara real-time.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Apakah Syntra menyediakan kustomisasi sesuai kebutuhan?</summary>
+          <div class="faq-answer">
+            Ya. Untuk Paket Enterprise, Syntra menyediakan solusi 100% custom yang disesuaikan dengan proses bisnis Anda — termasuk integrasi sistem (API, e-commerce, marketplace, payment gateway), desain UI/UX premium, dan dukungan teknis 24/7.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Apakah Syntra mendukung integrasi pembayaran QRIS dan e-Faktur Coretax?</summary>
+          <div class="faq-answer">
+            Ya. Modul POS dan billing kami mendukung integrasi pembayaran QRIS (termasuk QRIS Tap berbasis NFC), serta ekspor faktur sesuai format Coretax DJP — memastikan kepatuhan pajak dan kelancaran transaksi non-tunai.
+          </div>
+        </details>
       </div>
     </section>
 
@@ -976,15 +1027,14 @@
             </div>
 
             <div class="contact-card">
-              <div class="contact-icon" onclick="sendWhatsApp()">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+              <div class="contact-icon">
+                <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.339 18.337v-8.49H5.667v8.49h2.672zM7.003 8.574a1.548 1.548 0 1 0 0-3.096 1.548 1.548 0 0 0 0 3.096zm11.335 9.763v-4.65c0-2.404-1.283-3.522-2.994-3.522-1.38 0-2.001.76-2.348 1.293v-1.111h-2.671c.035.755 0 8.49 0 8.49h2.671v-4.741c0-.241.017-.482.088-.654.194-.482.635-.98 1.376-.98.971 0 1.36.74 1.36 1.825v4.55h2.518z"/>
                 </svg>
               </div>
-              <div class="contact-method">WhatsApp</div>
+              <div class="contact-method">LinkedIn</div>
               <div class="contact-info">
-                <a href="#" onclick="sendWhatsApp()"><?php echo whatsapp_view; ?></a>
+                <a href="https://www.linkedin.com/company/syntra-enterprise-teknologi/" target="_blank" rel="noopener">syntra-enterprise-teknologi</a>
               </div>
             </div>
 
@@ -1013,20 +1063,20 @@
                 Anda ke level berikutnya
               </p>
               <div class="cta-buttons">
-                <a href="#" onclick="sendWhatsApp()" class="cta-btn">
-                  <svg fill="currentColor" viewBox="0 0 24 24">
-                    <path
-                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
-                  </svg>
-                  Konsultasi Gratis via WhatsApp
-                </a>
-                <a href="mailto:syntrateknologi@gmail.com?subject=Konsultasi%20Solusi%20Digital%20Syntra"
+                <a href="mailto:<?php echo email; ?>?subject=Konsultasi%20Solusi%20Digital%20Syntra&body=Halo%20Tim%20Syntra%20Teknologi%2C%0A%0ASaya%20tertarik%20dengan%20layanan%20Anda.%0A%0ATerima%20kasih."
                   class="cta-btn">
                   <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                       d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  Diskusi via Email
+                  Konsultasi Gratis via Email
+                </a>
+                <a href="https://www.linkedin.com/company/syntra-enterprise-teknologi/" target="_blank" rel="noopener"
+                  class="cta-btn">
+                  <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.339 18.337v-8.49H5.667v8.49h2.672zM7.003 8.574a1.548 1.548 0 1 0 0-3.096 1.548 1.548 0 0 0 0 3.096zm11.335 9.763v-4.65c0-2.404-1.283-3.522-2.994-3.522-1.38 0-2.001.76-2.348 1.293v-1.111h-2.671c.035.755 0 8.49 0 8.49h2.671v-4.741c0-.241.017-.482.088-.654.194-.482.635-.98 1.376-.98.971 0 1.36.74 1.36 1.825v4.55h2.518z"/>
+                  </svg>
+                  Hubungi via LinkedIn
                 </a>
               </div>
             </div>
@@ -1038,10 +1088,12 @@
 
   </main>
 
-  <!-- Floating WhatsApp Button -->
-  <a href="#" onclick="sendWhatsApp()" class="wa-float" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="wa-icon" />
-    <span>WhatsApp Kami</span>
+  <!-- Floating Email Button -->
+  <a href="#" onclick="sendEmail(); return false;" class="wa-float" aria-label="Email Syntra Teknologi">
+    <svg class="wa-icon" viewBox="0 0 24 24" fill="none" stroke="#1A73E8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+    </svg>
+    <span>Email Kami</span>
   </a>
 
   <!-- modal -->
@@ -1078,10 +1130,12 @@
             <textarea id="needs" name="needs" placeholder="Jelaskan kebutuhan Anda" rows="4" required></textarea>
           </div>
           <div class="button-group">
-            <span onclick="sendWhatsApp()" class="whatsapp-btn">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="wa-icon" />
-              Mulai Konsultasi
-          </span>
+            <button type="submit" class="email-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="wa-icon" aria-hidden="true">
+                <path d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+              Konsultasi via Email
+            </button>
             <button type="submit" class="submit-btn">Mulai Uji Coba</button>
           </div>
         </form>
@@ -1098,13 +1152,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeBtn = modal.querySelector(".close");
   const form = document.getElementById("consultationForm");
 
-  // Show modal on page load
-  modal.style.display = "block";
+  // CTA konsultasi langsung membuka email client.
 
-  // Show modal on button click
-  showModalBtn.addEventListener("click", () => {
-    modal.style.display = "block";
-  });
+  // Redirect modal trigger to email.
+  if (showModalBtn) {
+    showModalBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      sendEmail();
+    });
+  }
 
   // Close modal when clicking X
   closeBtn.addEventListener("click", () => {
@@ -1122,13 +1178,13 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     const formData = {
-      fullName: document.getElementById("fullName").value,
-      companyName: document.getElementById("companyName").value,
-      email: document.getElementById("email").value,
-      phone: document.getElementById("phone").value,
-      needs: document.getElementById("needs").value
+      fullName: document.getElementById("fullName").value.trim(),
+      companyName: document.getElementById("companyName").value.trim(),
+      email: document.getElementById("email").value.trim(),
+      phone: document.getElementById("phone").value.trim(),
+      needs: document.getElementById("needs").value.trim()
     };
-    console.log("Form Data:", formData);
+    sendEmail(formData);
     modal.style.display = "none";
   });
 });
@@ -1167,11 +1223,24 @@ document.addEventListener("DOMContentLoaded", function () {
   </style>
 
   <script>
-    function sendWhatsApp() {
-      const phoneNumber = '<?php echo whatsapp; ?>'; // Ganti dengan nomor tujuan (tanpa tanda +)
-      const message = encodeURIComponent('Halo, saya tertarik dengan layanan kustom aplikasi di Syntra Teknologi .');
-      const url = `https://wa.me/${phoneNumber}?text=${message}`;
-      window.open(url, '_blank');
+    function sendEmail(formData = {}) {
+      const to = '<?php echo email; ?>';
+      const subject = encodeURIComponent('Konsultasi Solusi Digital Syntra');
+      const bodyText = [
+        'Halo Tim Syntra Teknologi,',
+        '',
+        'Saya tertarik dengan layanan kustom aplikasi di Syntra Teknologi.',
+        '',
+        `Nama: ${formData.fullName || ''}`,
+        `Nama Perusahaan: ${formData.companyName || ''}`,
+        `Email: ${formData.email || ''}`,
+        `No. Telepon: ${formData.phone || ''}`,
+        `Kebutuhan: ${formData.needs || ''}`,
+        '',
+        'Terima kasih.'
+      ].join('\n');
+      const body = encodeURIComponent(bodyText);
+      window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
     }
   </script>
 
@@ -1215,9 +1284,8 @@ document.addEventListener("DOMContentLoaded", function () {
   </script>
 
 
-  <footer>
-    <p>&copy; 2025 Syntra Teknologi Indonesia. Semua Hak Dilindungi.</p>
-    <p>by Fade Digital Development</p>
+  <footer role="contentinfo">
+    <p>&copy; <?php echo date('Y'); ?> <span itemprop="name">Syntra Teknologi Indonesia</span>. Semua Hak Dilindungi.</p>
   </footer>
 
 </body>

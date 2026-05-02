@@ -1,0 +1,36 @@
+# Syntra Teknologi Indonesia
+
+> Penyedia software bisnis dan aplikasi kustom untuk UMKM dan enterprise di Indonesia. Solusi POS, ERP, akuntansi, manajemen stok multi-gudang, dan integrasi pembayaran digital (QRIS, QRIS Tap, e-Faktur Coretax). Berbasis di Jakarta, melayani seluruh Indonesia.
+
+## Produk Utama
+
+- [Beranda & Pengenalan Produk](https://syntra-enterprise.com/): Ringkasan layanan, fitur, dan paket harga.
+- [Aplikasi Web Login](https://app.syntra-enterprise.com/): Akses dashboard pelanggan.
+
+## Paket Harga (per Mei 2026)
+
+- **Paket Dasar UMKM**: Rp 99.000/bulan — 1 data perusahaan, akses unlimited tim, manajemen role, uji coba gratis 30 hari, sudah termasuk PPN 11%.
+- **Paket Bisnis Tahunan**: Rp 1.990.000/tahun (~Rp 165.833/bulan) — fitur lengkap untuk bisnis berkembang.
+- **Solusi Enterprise Kustom**: Mulai Rp 700.000/proyek — solusi 100% custom, integrasi sistem, UI/UX premium, support 24/7.
+
+## Blog & Konten
+
+- [Blog Syntra](https://syntra-enterprise.com/blog): Wawasan dan panduan software bisnis untuk UMKM Indonesia.
+- [5 Tren Software Bisnis 2026 yang Wajib Diketahui UMKM Indonesia](https://syntra-enterprise.com/blog/tren-software-bisnis-umkm-2026): AI agent, QRIS Tap NFC, Coretax e-Faktur, cloud-first ERP, dan otomatisasi WhatsApp Business.
+- [Panduan Memilih Software POS untuk UMKM F&B di Indonesia (2026)](https://syntra-enterprise.com/blog/panduan-memilih-software-pos-umkm-fnb-2026): 8 fitur wajib, integrasi QRIS Tap, offline mode, dan rekomendasi sesuai skala bisnis.
+- [Cara Menerapkan e-Faktur Coretax 4.0: Checklist Praktis untuk PKP 2026](https://syntra-enterprise.com/blog/panduan-e-faktur-coretax-pkp-2026): Checklist 7 langkah migrasi, kesalahan umum, sanksi, dan kapan butuh otomatisasi software.
+- [WhatsApp Business API: Setup, Integrasi, dan ROI untuk UMKM Indonesia](https://syntra-enterprise.com/blog/whatsapp-business-api-setup-roi-umkm): Perbedaan App vs API, biaya per-conversation 2026, skenario integrasi POS/ERP, dan cara hitung ROI.
+- [ERP vs Aplikasi Akuntansi Sederhana: Kapan UMKM Harus Upgrade?](https://syntra-enterprise.com/blog/erp-vs-aplikasi-akuntansi-kapan-upgrade): 7 sinyal saatnya upgrade, biaya vs manfaat, dan panduan migrasi 5 fase.
+- [AI untuk UMKM: 10 Cara Praktis Mengotomatisasi Bisnis Tanpa Tim IT](https://syntra-enterprise.com/blog/ai-untuk-umkm-otomatisasi-bisnis-praktis): 10 use case AI praktis, daftar tools dengan harga, dan panduan mulai dalam 7 hari.
+
+## Kontak
+
+- Email: syntrateknologi@gmail.com
+- WhatsApp: +62 878-8440-4855
+- Lokasi: Jakarta, Indonesia
+- LinkedIn: https://www.linkedin.com/company/syntra-enterprise-teknologi/
+
+## Optional
+
+- [Sitemap XML](https://syntra-enterprise.com/sitemap.xml)
+- [RSS Feed Blog](https://syntra-enterprise.com/blog/feed)

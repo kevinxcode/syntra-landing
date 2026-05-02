@@ -40,10 +40,27 @@ RedirectMatch 404 /\.git
 
 
 # Deny access to files with extensions .ini, .psd, .log, .sh
-<FilesMatch "\.(ini|psd|log|sh|json|lock|txt|rst|md)$">
+<FilesMatch "\.(ini|psd|log|sh|json|lock|rst|md)$">
     Order allow,deny
     Deny from all
 </FilesMatch>
+
+# Block .txt files BUT allow robots.txt and ads.txt (penting untuk SEO)
+<FilesMatch "\.txt$">
+    Require all denied
+</FilesMatch>
+<Files "robots.txt">
+    Require all granted
+</Files>
+<Files "ads.txt">
+    Require all granted
+</Files>
+<Files "humans.txt">
+    Require all granted
+</Files>
+<Files "llms.txt">
+    Require all granted
+</Files>
 
 # Deny access to filenames starting with dot(.)
 <FilesMatch "^\.">
