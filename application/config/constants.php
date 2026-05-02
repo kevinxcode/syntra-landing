@@ -31,6 +31,18 @@ defined('FILE_WRITE_MODE') OR define('FILE_WRITE_MODE', 0666);
 defined('DIR_READ_MODE')   OR define('DIR_READ_MODE', 0755);
 defined('DIR_WRITE_MODE')  OR define('DIR_WRITE_MODE', 0755);
 
+$prefix_url = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
+$prefix_url .= "://".$_SERVER['HTTP_HOST'];
+$prefix_url .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
+
+if(isset($_SERVER['HTTP_X_FORWARDED_PROTO'])){
+    $new_host = $_SERVER['HTTP_X_FORWARDED_PROTO'].'://'.$_SERVER['HTTP_HOST'].'/';
+}else{
+    $new_host = $prefix_url;
+}
+define('prefix_url', $new_host);
+define('prefix_url_host', $new_host);
+
 /*
 |--------------------------------------------------------------------------
 | File Stream Modes
