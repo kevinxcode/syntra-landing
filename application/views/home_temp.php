@@ -977,12 +977,7 @@ define('email', 'syntrateknologi@gmail.com');
           </div>
         </details>
 
-        <details class="faq-item">
-          <summary>Apakah Syntra mendukung integrasi pembayaran QRIS dan e-Faktur Coretax?</summary>
-          <div class="faq-answer">
-            Ya. Modul POS dan billing kami mendukung integrasi pembayaran QRIS (termasuk QRIS Tap berbasis NFC), serta ekspor faktur sesuai format Coretax DJP — memastikan kepatuhan pajak dan kelancaran transaksi non-tunai.
-          </div>
-        </details>
+       
       </div>
     </section>
 
