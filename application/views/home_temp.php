@@ -966,26 +966,9 @@ define('email', 'syntrateknologi@gmail.com');
           </div>
         </details>
 
-        <details class="faq-item">
-          <summary>Berapa harga software Syntra?</summary>
-          <div class="faq-answer">
-            Harga paket dimulai dari <strong>Rp 99.000 per bulan</strong> untuk Paket Dasar UMKM, <strong>Rp 1.990.000 per tahun</strong> (setara Rp 165.833/bulan) untuk Paket Bisnis Tahunan, dan mulai <strong>Rp 700.000 per proyek</strong> untuk solusi Enterprise Kustom. Semua harga sudah termasuk PPN 11%.
-          </div>
-        </details>
+       
 
-        <details class="faq-item">
-          <summary>Apakah ada uji coba gratis?</summary>
-          <div class="faq-answer">
-            Ya. Setiap paket berlangganan menyediakan uji coba gratis 30 hari penuh tanpa biaya tambahan dan tanpa kewajiban berlangganan setelahnya.
-          </div>
-        </details>
 
-        <details class="faq-item">
-          <summary>Apakah aplikasi bisa diakses dari mobile?</summary>
-          <div class="faq-answer">
-            Aplikasi Syntra dapat diakses melalui Web, Android, dan iOS. Tim Anda dapat mengelola penjualan, stok, dan laporan dari mana saja secara real-time.
-          </div>
-        </details>
 
         <details class="faq-item">
           <summary>Apakah Syntra menyediakan kustomisasi sesuai kebutuhan?</summary>
