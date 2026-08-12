@@ -580,7 +580,7 @@ define('email', 'syntrateknologi@gmail.com');
 
 
 
-    <section class="container pricing-section" aria-label="Paket Harga dan Layanan">
+    <!-- <section class="container pricing-section" aria-label="Paket Harga dan Layanan">
       <h2 style="text-align:center; color:#0d47a1; margin-top: 2rem;" id="harga">Solusi Harga Terjangkau untuk Setiap
         Bisnis</h2>
       <div class="pricing" itemscope itemtype="http://schema.org/PriceSpecification">
@@ -636,7 +636,7 @@ define('email', 'syntrateknologi@gmail.com');
             Gratis</button>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="konsultasi-section" aria-label="Konsultasi Bisnis">
       <div class="konsultasi-container">
